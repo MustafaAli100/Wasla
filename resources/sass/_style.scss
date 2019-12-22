@@ -1,80 +1,92 @@
-.wrapper .container .panel-body form .info{padding: 30px 36px;}
-body{
- border-color: aqua;
-background-image:url(Layouts\images\jNBSrspt.jpg)no-repeat center center fixed;
-   background-size:cover; 
+.wrapper .container .panel-body form .info {
+    padding: 30px 36px;
 }
-.main-section{
-    
+
+// body{
+//  border-color: aqua;
+// background-image:url(Layouts\images\jNBSrspt.jpg)no-repeat center center fixed;
+//    background-size:cover; 
+// }
+.main-section {
     margin: 0 auto;
     margin-top: 130px;
     padding: 0;
 }
-.modal-content{
+
+.modal-content {
     opacity: .95;
     padding: 0 18px;
     box-shadow: 0px 0px 3px #848484;
-    
 }
-.user-img{
-    margin-top:-50px; 
-    margin-bottom:20px;
+
+.user-img {
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
-.user-img img{
-    
+
+.user-img img {
     height: 100px;
     width: 100px;
 }
-.form-group{
+
+.form-group {
     margin-bottom: 25px;
 }
-.form-group input{
-    
-    height:42px ;
+
+.form-group input {
+    height: 42px;
     border-radius: 5px;
-    font-size:18px ;
+    font-size: 18px;
     padding-left: 54px;
 }
+
+
 /*.form-group{
     content: "\f023";
     position:absolute;
     font-size: 22px;
     color: aqua;
 }*/
+
+
 /*.form-group:last-of-type::before{
     content: "\f023";
 }*/
-.lock{
+
+.lock {
     padding-bottom: 100px;
     color: aqua;
     padding-left: 100px;
     position: absolute;
     color: beige;
 }
-button{
-width: 111px;
-margin: 5px 0 25px;
+
+button {
+    width: 111px;
+    margin: 5px 0 25px;
     padding-bottom: 4px;
     padding-right: 4px;
     padding-left: 6px;
 }
-.btn{
+
+.btn {
     background-color: darkslategrey;
     color: aliceblue;
     font-size: 19px;
     padding: 7px 14px;
     border-radius: 5px;
     border-bottom: 0px solid;
-   
 }
-.svg-inline--fa{
+
+.svg-inline--fa {
     font-size: 20px;
     margin-right: 7px;
 }
-.forgot{
+
+.forgot {
     padding: 5px 0 25px;
-    
 }
+
 
 /*
 STARTUP.CSS
@@ -91,7 +103,11 @@ body {
     color: #6c6f73;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #333;
 }
 
@@ -116,17 +132,20 @@ img {
 .blockquote-footer {
     margin: 1rem 0 0;
 }
-.fd-margin{margin-top: 87px;}
-#stage {
-    background: url( img/stage.jpg') center center no-repeat;
-    background-size: cover;
-    color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+
+.fd-margin {
+    margin-top: 87px;
 }
 
+// #stage {
+//     background: url( img/stage.jpg') center center no-repeat;
+//     background-size: cover;
+//     color: white;
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+// }
 #stage-caption {
     font-size: 1.4rem;
     font-weight: 200;
@@ -134,7 +153,6 @@ img {
     margin: 0 auto;
     text-align: center;
 }
-
 
 #stage-caption h1 {
     color: white;
@@ -187,16 +205,16 @@ img {
     color: #6C6F73;
 }
 
+
 /* Media Queries */
 
-@media screen and ( min-width : 991px ) {
-
+@media screen and ( min-width: 991px) {
     .feature-content {
         display: flex;
         align-items: center;
     }
-
 }
+
 
 /*
 STARTUP.CSS
@@ -442,7 +460,8 @@ select {
 *,
  :after,
  :before {
-    box-sizing: inherit margin-left: 15px;
+    box-sizing: inherit;
+    margin-left: 15px;
 }
 
 body,
@@ -658,7 +677,8 @@ nav>.nav {
 
 .nav,
 nav {
-    z-index: 5010 margin-left: 0px;
+    z-index: 5010;
+    margin-left: 0px;
     margin-right: 0px;
 }
 
@@ -1054,14 +1074,13 @@ select.input {
 .nav {
     line-height: 1.07357;
     display: flex;
-     background-color: #007bff;
+    background-color: #007bff;
 }
 
-.nav_foter{
+.nav_foter {
     line-height: 1.07357;
     display: flex;
     list-style-type: none;
-     
 }
 
 .nav>li {
@@ -1625,15 +1644,16 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
         line-height: 1.67
     }
 }
-.list{
-	direction: rtl;
-    padding-left: 30%;
-    
-}
-.nav li{ 
 
+.list {
+    direction: rtl;
+    padding-left: 30%;
+}
+
+.nav li {
     margin-left: 0%;
 }
+
 @media screen {
     .print-only {
         display: none!important
@@ -1641,11 +1661,9 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
 }
 
 .navbar ul {
-
     list-style-type: none;
 }
 
-.navbar  {
-
+.navbar {
     list-style-type: none;
 }

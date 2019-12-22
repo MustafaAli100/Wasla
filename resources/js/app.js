@@ -5,17 +5,13 @@
  */
 
 require('./bootstrap');
-<<<<<<< HEAD
-require('./jquery.min');
 require('./script');
 require('./atlantis.min');
 require('./jquery.scrollbar.min');
 require('./jquery.sparkline.min');
 require('./jquery.ui.min');
 require('./webfont.min');
-=======
 
-window.Vue = require('vue');
 
 /**
  * The following block of code may be used to automatically register your
@@ -39,4 +35,3 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
->>>>>>> 091c6bba22fc870b6a6b2c1b02dc7972796d0fc8
