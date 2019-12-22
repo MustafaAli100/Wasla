@@ -11,11 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+  //  return view('welcome');
+//});
 
 
-Route::get("/anything","postcontroller@create");
+//Route::get("/anything","postcontroller@create");
 
-Route::get("/form","postcontroller@store"); 
+//Route::get("/form","postcontroller@store"); 
+
+
+//Route::get("/post/{id}","postcontroller@index");
+
+Route::resource("posts","postcontroller");
+
+Route::get("/contact/{id}","postcontroller@contact");
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
