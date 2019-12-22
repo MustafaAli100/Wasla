@@ -11,10 +11,10 @@ class postcontroller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
         //
-        
+        return "its working the num is".$id ;
     }
 
     /**
@@ -25,7 +25,7 @@ class postcontroller extends Controller
     public function create()
     {
         //
-        return view("m.home");
+        return "I am mustafa out of the comfort zone";
     }
 
     /**
@@ -48,6 +48,7 @@ class postcontroller extends Controller
     public function show($id)
     {
         //
+        return "this is mustafa reading" . $id;
     }
 
     /**
@@ -82,5 +83,11 @@ class postcontroller extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function contact($id){
+
+
+        return view("contact")->with("id",$id) ;
+    
     }
 }
