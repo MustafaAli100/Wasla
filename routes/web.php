@@ -11,15 +11,9 @@
 |
 */
 
-<<<<<<< HEAD
 Route::get('/', function () {
     return view('home');
 });
-=======
-//Route::get('/', function () {
-  //  return view('welcome');
-//});
->>>>>>> 091c6bba22fc870b6a6b2c1b02dc7972796d0fc8
 
 
 //Route::get("/anything","postcontroller@create");
