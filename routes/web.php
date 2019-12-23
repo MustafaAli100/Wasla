@@ -56,6 +56,9 @@ Route::get('/acceptance', function () {
 Route::get('/allusers', function () {
     return view('admin.allusers');
 });
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
 
 //Route::get("/anything","postcontroller@create");
 

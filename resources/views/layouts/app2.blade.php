@@ -266,7 +266,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a href="#">
+							<a href="/dashboard">
 								<i class="fas fa-layer-group"></i>
 								<p>dashboard</p>
 							</a>
