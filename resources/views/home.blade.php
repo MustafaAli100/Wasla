@@ -47,7 +47,7 @@
                                             
                                             <li>
                                                 <ul class="nav is-aux is-small ">
-                                                    <li><a id="ar-language" href="/en/">Sing in</a></li>
+                                                    <li><a id="ar-language" href="/register">Sign Up</a></li>
                                                 </ul>
                                             </li>
                                     

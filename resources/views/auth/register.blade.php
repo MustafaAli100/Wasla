@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container d-flex justify-content-center">
-    <div class="col-8 text-center">
+    <div class="modal-dialog text-center">
        <div class="col-sm-12 main-section">
          <div class="modal-content">
            <p class="h2 text-center">logo</p>
@@ -17,10 +17,10 @@
                             <!-- first name  -->
                             <div class="form-group" >
                             <label class="col-md-4 control-label">First Name</label>
-                             <div class="col-md-6 inputGroupContainer">
+                             <div class="col-md-6">
                                <div class="input-group">
                                     <span class="input-group-addon">
-                                      <i class="glyphicon glyphicon-user"></i>
+                                      <i class="fa fa-user"></i>
                                     </span>
                                     <input id="firstname" type="text" class="form-control @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" required autocomplete="firstname" autofocus>
                       
@@ -131,11 +131,11 @@
                                 <div class="col-md-6 inputGroupContainer">
                                   <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-check"></i></span>
-                                      <select class="selectpicker form-control" id="sel1">
+                                      <select class="selectpicker form-control" id="sel1" name="type" required>
                                         <!--- <option selected></option>-->
-                                        <option value="1"> <span><i class="fa fa-address-book-o"></i></span>Project Owner</option>
-                                        <option value="2">Programmer</option>
-                                        <option value="3">Programming Company</option>
+                                        <option value="ProjectOwner"> <span><i class="fa fa-address-book-o"></i></span>Project Owner</option>
+                                        <option value="Programmer">Programmer</option>
+                                        <option value="Company">Programming Company</option>
                                       </select>
                                     </div>
                                   </div>
