@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="modal-dialog text-center">
+<div class="container d-flex justify-content-center">
+    <div class="col-8 text-center">
        <div class="col-sm-12 main-section">
          <div class="modal-content">
            <p class="h2 text-center">logo</p>
@@ -11,7 +11,7 @@
                    <p class="t-large-d">هل لديك حساب في وصلة؟ <a href="/ar/login/">دخول </a></p>
            </div>
                 <div class="card-header">{{ __('Register') }}</div>
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" class="form-horizontal" action="{{ route('register') }}">
                         @csrf
                         <fieldset>
                             <!-- first name  -->
