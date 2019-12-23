@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 .wrapper .container .panel-body form .info {
   padding: 30px 36px;
 }
@@ -43,11 +42,9 @@
     font-size: 22px;
     color: aqua;
 }*/
-
 /*.form-group:last-of-type::before{
     content: "\f023";
 }*/
-
 .lock {
   padding-bottom: 100px;
   color: aqua;
@@ -85,7 +82,6 @@ button {
 /*
 STARTUP.CSS
 */
-
 html,
 body {
   height: 100%;
@@ -191,7 +187,6 @@ img {
 }
 
 /* Media Queries */
-
 @media screen and (min-width: 991px) {
   .feature-content {
     display: -webkit-box;
@@ -200,11 +195,9 @@ img {
             align-items: center;
   }
 }
-
 /*
 STARTUP.CSS
 */
-
 html,
 body {
   height: 100%;
@@ -219,15 +212,13 @@ body {
     display: none !important;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .search-bar:not(.is-active).is-compact > .input-pack,
-  .search-bar:not(.is-active) > .b-close,
-  .search-bar:not(.is-compact) > .b-search {
+.search-bar:not(.is-active) > .b-close,
+.search-bar:not(.is-compact) > .b-search {
     display: none;
   }
 }
-
 .icon {
   min-width: 18px;
 }
@@ -256,7 +247,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: Lato;
   font-style: normal;
@@ -265,7 +255,6 @@ body {
   font-display: swap;
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: Lato;
   font-style: normal;
@@ -274,7 +263,6 @@ body {
   font-display: swap;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
-
 @font-face {
   font-family: Lato;
   font-style: normal;
@@ -283,7 +271,6 @@ body {
   font-display: swap;
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: Lato;
   font-style: normal;
@@ -292,7 +279,6 @@ body {
   font-display: swap;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
-
 @font-face {
   font-family: Lato;
   font-style: normal;
@@ -301,7 +287,6 @@ body {
   font-display: swap;
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
   font-family: Lato;
   font-style: normal;
@@ -310,7 +295,6 @@ body {
   font-display: swap;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
-
 @font-face {
   font-family: "Noto Kufi Arabic";
   font-style: normal;
@@ -319,7 +303,6 @@ body {
   src: url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.eot?#iefix) format("embedded-opentype"), url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.ttf) format("truetype");
   font-display: swap;
 }
-
 @font-face {
   font-family: "Noto Kufi Arabic";
   font-style: normal;
@@ -328,7 +311,6 @@ body {
   src: url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.eot?#iefix) format("embedded-opentype"), url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.ttf) format("truetype");
   font-display: swap;
 }
-
 .list.is-basic,
 .list.is-basic > li {
   padding-right: 0;
@@ -1338,12 +1320,12 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
 
 @media screen and (max-width: 1023px) {
   .in-pack,
-  .popover {
+.popover {
     width: 100%;
   }
 
   .nav,
-  .nav.can-toggle {
+.nav.can-toggle {
     background-color: #fff;
   }
 
@@ -1352,11 +1334,11 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
   }
 
   .h3,
-  h1,
-  h2,
-  h4,
-  h5,
-  h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
     line-height: 1.2;
   }
 
@@ -1373,7 +1355,7 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
   }
 
   .nav > li > a,
-  h5 {
+h5 {
     font-size: 1.125rem;
   }
 
@@ -1456,7 +1438,7 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
   }
 
   .dropdown > li.is-title,
-  .dropdown > li > a {
+.dropdown > li > a {
     padding: 14px 20px;
   }
 
@@ -1469,7 +1451,7 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
   }
 
   .in-pack,
-  .input-pack {
+.input-pack {
     display: block;
   }
 
@@ -1602,10 +1584,9 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
     line-height: 1.67;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .popover.is-pointing:after,
-  .popover:before {
+.popover:before {
     content: "";
     position: absolute;
     display: block;
@@ -1639,7 +1620,7 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
   }
 
   .popover[data-placement=bl],
-  .popover[data-placement=br] {
+.popover[data-placement=br] {
     bottom: -4px;
     -webkit-transform: translateX(0) translateY(100%) translateZ(2px);
             transform: translateX(0) translateY(100%) translateZ(2px);
@@ -1714,7 +1695,7 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
   }
 
   .in-pack,
-  .in-pack > .input {
+.in-pack > .input {
     border-radius: 0;
     min-width: 150px;
   }
@@ -1768,7 +1749,6 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
     line-height: 1.67;
   }
 }
-
 .list {
   direction: rtl;
   padding-left: 30%;
@@ -1783,7 +1763,6 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
     display: none !important;
   }
 }
-
 .navbar ul {
   list-style-type: none;
 }
@@ -1791,4 +1770,3 @@ a:not(.btn):not(.b-close):not(.label).is-inverse {
 .navbar {
   list-style-type: none;
 }
-
