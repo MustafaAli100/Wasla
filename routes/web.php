@@ -41,6 +41,9 @@ Route::get('/ohome', function () {
 Route::get('/addproject', function () {
     return view('owner.addProject');
 });
+Route::get('/show_project', function () {
+    return view('owner.show_project');
+});
 Route::get('/showoffer', function () {
     return view('owner.offers');
 });
