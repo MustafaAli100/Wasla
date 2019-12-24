@@ -27,8 +27,8 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <a class="is-logo col-1 pl-0 ml-0 pr-0 mr-0" href="https://www.wasla.com">
             <img alt="" src="http://127.0.0.1:8000/img/wasla23.jpg" class="avatar avatar-70 photo avatar-default" height="70" width="70"> </a><ul class="navbar-nav col-md-7 pr-0 d-flex justify-content-start mrr-5">
-                <li class="cstyle  col-md-1 pr-0"><a href="the-home--wasla.html">Home</a></li>
-                   <li class=" cstyle col-md-1 pr-0 " data-popover=""><a href="المشاريع-المنفذة.html">Projrct</a>
+                <li class="cstyle  col-md-1 pr-0"><a href="#">Home</a></li>
+                   <li class=" cstyle col-md-1 pr-0 " data-popover=""><a href="#">Projrct</a>
                         </li>
                                             <li class=" cstyle col-md-3 pr-0"><a href="https:****">Owner project</a>
                         

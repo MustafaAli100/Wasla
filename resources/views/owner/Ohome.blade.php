@@ -18,6 +18,7 @@
 				</div>
 				<div class="col-12">
 					<!-- <h1 class="m-3 p-3 d-flex justify-content-center bg-primary">Added project</h1> -->
+					<a  class="show" href="#" >
 					<div class="card shadow mt-3 mb-3 p-3">
 				         <div class="card-body">
 									<div class="d-flex">
@@ -34,9 +35,11 @@
 											<small class="text-muted">8:40 PM</small>
 									</div>
                         </div>
-                    </div>
-                </div>
-                                
+					</div>
+					<a  class="show" href="#" >
+				</div>
+				
+				<a  class="show" href="#" >                
                 <div class="card shadow mt-3 mb-3 p-3">
 				        <div class="card-body">
 									<div class="d-flex">
@@ -54,8 +57,9 @@
                                             </div>  
                                     </div>
                         </div>
-                </div>
-                   
+				</div>
+				</a>
+				<a  class="show" href="#" >  
                 <div class="card shadow mt-3 mb-3 p-3">
 				        <div class="card-body">
 									<div class="d-flex">
@@ -73,8 +77,9 @@
                                             </div>  
                                     </div>
                         </div>
-                </div>
-                
+				</div>
+				</a>
+				<a  class="show" href="#" >
                 <div class="card shadow mt-3 mb-3 p-3">
 				        <div class="card-body">
 									<div class="d-flex">
@@ -92,6 +97,9 @@
                                             </div>  
                                     </div>
                         </div>
-                </div>
-	</div>
+				</div>
+				</a>
+			</div>
+</div>
+			
 	@endsection

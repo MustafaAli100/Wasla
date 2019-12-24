@@ -38,64 +38,70 @@
 							</div>
 						</div>
 					</a>
-                </div>
-                                
-                <div class="card shadow mt-3 mb-3 p-3">
-				        <div class="card-body">
+
+						<a  class="show" href="#" >
+						<div class="card shadow mt-3 mb-3 p-3">
+							<div class="card-body">
+								<div class="d-flex">
+									<div class="flex-1 ml-3 pt-1">
+										<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
+										<span class="badge badge-count p-0"> 4 </span>
+										<span class="text-muted">offers</span>
+										<span class="text-muted pl-3"> 15 </span>
+										<span class="text-muted"> day</span>
+										<span class="text-muted pl-3"> 300 </span>
+										<span class="text-muted ">$ </span>
+									</div>
+									<div class="float-right pt-1">
+										<small class="text-muted">8:40 PM</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a  class="show" href="#" >
+							<div class="card shadow mt-3 mb-3 p-3">
+								<div class="card-body">
 									<div class="d-flex">
 										<div class="flex-1 ml-3 pt-1">
 											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <span class="badge badge-count p-0"> 4 </span>
-                                            <span class="text-muted">offers</span>
-                                            <span class="text-muted pl-3"> 15 </span>
-                                            <span class="text-muted"> day</span>
-                                            <span class="text-muted pl-3"> 300 </span>
-                                            <span class="text-muted ">$ </span>
+											<span class="badge badge-count p-0"> 4 </span>
+											<span class="text-muted">offers</span>
+											<span class="text-muted pl-3"> 15 </span>
+											<span class="text-muted"> day</span>
+											<span class="text-muted pl-3"> 300 </span>
+											<span class="text-muted ">$ </span>
 										</div>
-									    <div class="float-right pt-1">
-											<small class="text-muted">1 Day Ago</small>
-                                        </div>  
-                                    </div>
-                        </div>
-                </div>
-                   
-                <div class="card shadow mt-3 mb-3 p-3">
-				        <div class="card-body">
-									<div class="d-flex">
-										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <span class="badge badge-count p-0"> 4 </span>
-                                            <span class="text-muted">offers</span>
-                                            <span class="text-muted pl-3"> 15 </span>
-                                            <span class="text-muted"> day</span>
-                                            <span class="text-muted pl-3"> 300 </span>
-                                            <span class="text-muted ">$ </span>
+										<div class="float-right pt-1">
+											<small class="text-muted">8:40 PM</small>
 										</div>
-									        <div class="float-right pt-1">
-											<small class="text-muted">1 Day Ago</small>
-                                            </div>  
-                                    </div>
-                        </div>
-                </div>
-                
-                <div class="card shadow mt-3 mb-3 p-3">
-				        <div class="card-body">
-									<div class="d-flex">
-										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <span class="badge badge-count p-0"> 4 </span>
-                                            <span class="text-muted">offers</span>
-                                            <span class="text-muted pl-3"> 15 </span>
-                                            <span class="text-muted"> day</span>
-                                            <span class="text-muted pl-3"> 300 </span>
-                                            <span class="text-muted ">$ </span>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a  class="show" href="#" >
+								<div class="card shadow mt-3 mb-3 p-3">
+									<div class="card-body">
+										<div class="d-flex">
+											<div class="flex-1 ml-3 pt-1">
+												<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
+												<span class="badge badge-count p-0"> 4 </span>
+												<span class="text-muted">offers</span>
+												<span class="text-muted pl-3"> 15 </span>
+												<span class="text-muted"> day</span>
+												<span class="text-muted pl-3"> 300 </span>
+												<span class="text-muted ">$ </span>
+											</div>
+											<div class="float-right pt-1">
+												<small class="text-muted">8:40 PM</small>
+											</div>
 										</div>
-									        <div class="float-right pt-1">
-											<small class="text-muted">1 Day Ago</small>
-                                            </div>  
-                                    </div>
-                        </div>
-                </div>
+									</div>
+								</div>
+							</a>
+				</div>
+					
+		
 			</div>
 	</div>
 @endsection

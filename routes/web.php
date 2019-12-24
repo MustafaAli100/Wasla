@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('project', function () {
+    return view('project');
+});
 Route::get('/fadwa', function () {
     return view('layouts.app2');
 });
@@ -56,8 +59,8 @@ Route::get('/acceptance', function () {
 Route::get('/allusers', function () {
     return view('admin.allusers');
 });
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
+Route::get('/dashbord', function () {
+    return view('admin.dashbord');
 });
 
 //Route::get("/anything","postcontroller@create");
