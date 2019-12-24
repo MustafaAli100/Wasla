@@ -2,6 +2,20 @@
 <html lang="en">
 
 	<head>
+	<style>
+	.skills{
+    	margin-top:2%;
+		font-size:17px
+	}
+
+	.skills i {
+		font-size:14px;
+		color:blue; 
+		margin-left:2%;
+
+	}
+	
+	</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
