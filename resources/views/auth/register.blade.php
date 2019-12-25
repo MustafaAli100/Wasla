@@ -16,8 +16,8 @@
                         <fieldset>
                             <!-- first name  -->
                             <div class="form-group" >
-                            <label class="col-md-4 control-label">First Name</label>
-                             <div class="col-md-6">
+                            {{-- <label class="col-md-4 control-label">First Name</label> --}}
+                             <div class="col-md-12">
                                <div class="input-group">
                                     <span class="input-group-addon">
                                       <i class="fa fa-user"></i>
