@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fonts.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!--     <link rel="stylesheet" href="Layouts/css/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="layouts/css/pro.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Layouts/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
+    <script src="Layouts/js/jquery2.2.4.js"></script>
+    <script src="Layouts/js/jq.js"></script>
+    <script src="Layouts/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
+    
 	<!-- Fonts and icons -->
-    <script src="{{ asset('js/atlantis.min.js') }}"></script>
-    <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.scrollbar.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.sparkline.min.js') }}"></script>
-    <script src="{{ asset('js/webfont.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+	<script src="js/plugin/webfont/webfont.min.js"></script>
+	
 
 	<script>
 		WebFont.load({
@@ -33,15 +34,18 @@
 	</script>
 
 	<!-- CSS Files -->
-    <link rel="stylesheet" href="{{asset('css/atlantis.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/pro.css')}}">
-    <link rel="stylesheet" href="{{asset('css/show.css')}}">
-    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/fonts.min.css')}}">
-	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/atlantis.min.css">
+    
 
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="css/demo.css">
+	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	
+
 </head>
 <body>
 	<div class="wrapper">
@@ -49,21 +53,20 @@
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
 				
-				<a href="#" class="logo">
-					<img src="#" alt="navbar brand" class="navbar-brand">
+				<a href="index.html" class="logo">
+					<img src="img/logo.svg" alt="navbar brand" class="navbar-brand">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
-						<i class="icon-menu"></i>
+						 <i class="icon-menu"></i> 
 					</span>
 				</button>
 				<button class="topbar-toggler more"><i class="fa fa-bars"></i></button>
 				<div class="nav-toggle">
 					<button class="btn btn-toggle toggle-sidebar">
-						<i class="icon-menu"></i>
+				  <i class="icon-menu"></i>
 					</button>
-                </div>
-                
+				</div>
 			</div>
 			<!-- End Logo Header -->
 
@@ -84,11 +87,11 @@
 						</form>
 					</div> -->
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						{{-- <li class="nav-item toggle-nav-search hidden-caret">
+						<li class="nav-item toggle-nav-search hidden-caret">
 							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
 								<i class="fa fa-search"></i>
 							</a>
-						</li> --}}
+						</li>
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-envelope"></i>
@@ -231,11 +234,16 @@
 											<div class="avatar-lg"><img src="img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 											<div class="u-text">
 												<h4>Hizrian</h4>
-												<p class="text-muted">hello@example.com</p>
+												<p class="text-muted">admin@example.com</p>
 											</div>
 										</div>
 									</li>
 									<li>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">My Profile</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Edite Profile</a>
+										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#">Logout</a>
 									</li>
 								</div>
@@ -245,7 +253,9 @@
 				</div>
 			</nav>
 			<!-- End Navbar -->
-</div>
+
+            
+			</div>
 
 <!-- Sidebar -->
 <div class="sidebar sidebar-style-2">
@@ -257,46 +267,104 @@
 								<h3 class="fa fa-home" > Home </h3>
 							</a>
 						</li>
-
 						<li class="nav-item">
-							<a href="/dashbord">
+							<a href="{{url('/admin_home')}}">
+								<i class="fas fa-layer-group"></i>
+								<p>Home</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{url('/dashbord')}}">
 								<i class="fas fa-layer-group"></i>
 								<p>dashboard</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="/allusers">
+							<a href="{{url('/all_users')}}">
 								<i class="fas fa-users"></i>
-								<p>All User</p>
+								<p>Users</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="/acceptance">
+							<a href="{{url('/all_projects')}}">
 								<i class="fas fa-pen-square"></i>
-								<p>Accept The Project</p>
+								<p>Projects</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="/allprojects">
+							<a href="{{url('/acceptance')}}">
 								<i class="fas fa-th-list"></i>
-								<p>All The Project</p>
+								<p>acceptance</p>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="#">
+							<a href="{{url('/dashbord')}}">
 								<i class="fa fa-copy"></i>
-								<p>Pages</p>
+								<p>Immplemented Progect</p>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-<!-- End Sidebar -->
-    </div>
-    <main class="py-4">
-        @yield('content')
-    </main>
+		</div>
 
+<!-- End Sidebar -->
+@yield('content')
+        <!-- </diV> -->
+<!-- End Sidebar -->
+<footer class="footer">
+	<div class="container-fluid">
+		<nav class="pull-left">
+			<ul class="nav_foter" style="list-style-type: none">
+				
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="#">
+						Help
+					</a>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						Terms of use and privacy statement
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="copyright ml-auto">
+		2000-2019 wasla.com, made  <!--<i class="fa fa-heart heart text-danger"></i>--> by <a href="https://www.themekita.com">Teem  wasla</a> 
+		
+</footer>
 </div>
+		
+			
+	<!--   Core JS Files   -->
+	<script src="js/core/jquery.3.2.1.min.js"></script>
+	<script src="js/core/popper.min.js"></script>
+	<script src="js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+	<!-- jQuery Vector Maps -->
+	<script src="js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="js/atlantis.min.js"></script>
+
+
+
 </body>
 </html>

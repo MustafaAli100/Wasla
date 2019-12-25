@@ -1,14 +1,10 @@
-
-
-<?php 
-
-
-include "include.php";
-
-?>
+@extends('layouts.app3')
+@section('content')
 
 <body >
-     <div class="" style="margin-top:7%">
+<div class="main-panel">
+<div class="content">
+     <!-- <div class="" style="margin-top:7%"> -->
         <!-- <img src="img/stage.jpg" class="d-block w-100" alt="...">
                  <div class="carousel-caption d-none d-md-block">
                     <h1>Wasla.come</h1>
@@ -131,4 +127,4 @@ include "include.php";
             </div>
             <!--// block control  -->
         </div>
-<?php include "template/footer.php";?>
+        </div>
