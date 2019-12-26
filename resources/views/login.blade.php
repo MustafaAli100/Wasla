@@ -1,4 +1,4 @@
-@extends('layouts.home')
+@extends('layouts.hnav')
 @section('content')
 <body>
    <div class="modal-dialog text-center">
@@ -6,7 +6,7 @@
         <div class="modal-content">
             
         <div class="col-12 user-img">
-               <img src="Layouts/images/people.png"/>     
+               <img src="img/people.png"/>     
             </div> 
         <form class="col-12">
            <div class="form-group">

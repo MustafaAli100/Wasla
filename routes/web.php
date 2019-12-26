@@ -53,6 +53,9 @@ Route::get('/show_offer', function () {
 Route::get('/confirm', function () {
     return view('confirm');
 });
+Route::get('/nav', function () {
+    return view('nav');
+});
 Route::get('/Trms', function () {
     return view('Trms-of-use-and-privacy');
 });

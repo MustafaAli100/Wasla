@@ -1,8 +1,8 @@
-@extends('layouts.app3')
+@extends('layouts.hnav')
 @section('content')
 
 <body >
-<div class="main-panel">
+<div class="main-panel" style="margin-top:5%" >
 <div class="content">
      <!-- <div class="" style="margin-top:7%"> -->
         <!-- <img src="img/stage.jpg" class="d-block w-100" alt="...">

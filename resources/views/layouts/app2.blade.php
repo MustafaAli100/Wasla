@@ -268,7 +268,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="{{url('/admin_home')}}">
+							<a href="{{url('/dashbord')}}">
 								<i class="fas fa-layer-group"></i>
 								<p>Home</p>
 							</a>
@@ -297,12 +297,12 @@
 								<p>acceptance</p>
 							</a>
 						</li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a href="{{url('/dashbord')}}">
 								<i class="fa fa-copy"></i>
 								<p>Immplemented Progect</p>
 							</a>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>
