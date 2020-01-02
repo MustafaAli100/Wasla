@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="layouts/css/pro.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="Layouts/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
+	<link href="desgin/css/agency.min.css" rel="stylesheet">
     <script src="Layouts/js/jquery2.2.4.js"></script>
     <script src="Layouts/js/jq.js"></script>
     <script src="Layouts/js/bootstrap.min.js"></script>
@@ -71,21 +72,9 @@
 			<!-- End Logo Header -->
 
 			<!-- Navbar Header -->
-			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue">
 				
 				<div class="container-fluid">
-					<!-- <div class="collapse" id="search-nav">
-						<form class="navbar-left navbar-form nav-search mr-md-3">
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<button type="submit" class="btn btn-search pr-1">
-										<i class="fa fa-search search-icon"></i>
-									</button>
-								</div>
-								<input type="text" placeholder="Search ..." class="form-control">
-							</div>
-						</form>
-					</div> -->
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item toggle-nav-search hidden-caret">
 							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
@@ -313,25 +302,40 @@
         <!-- </diV> -->
 <!-- End Sidebar -->
 <footer class="footer">
-	<div class="container-fluid">
-		<nav class="pull-left">
-			<ul class="nav_foter" style="list-style-type: none">
-				
-				<!-- <li class="nav-item">
-					<a class="nav-link" href="#">
-						Help
-					</a>
-				</li> -->
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						Terms of use and privacy statement
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="copyright ml-auto">
-		2000-2019 wasla.com, made  <!--<i class="fa fa-heart heart text-danger"></i>--> by <a href="https://www.themekita.com">Teem  wasla</a> 
-		
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-4">
+				<span class="copyright">Copyright &copy;  wasla.com  2020-2019</span>
+			</div>
+			<div class="col-md-4">
+				<ul class="list-inline social-buttons">
+					<li class="list-inline-item">
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul class="list-inline quicklinks">
+					<li class="list-inline-item">
+						<a class="nav-link" href="{{url('/Trms')}}">
+					   Privacy Policy & Terms of Use</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </footer>
 </div>
 		

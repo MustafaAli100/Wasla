@@ -4,10 +4,10 @@
     <div class="modal-dialog text-center">
        <div class="col-sm-12 main-section">
          <div class="modal-content">
-           <p class="h2 text-center">logo</p>
+           <p class="h2 text-center">Register</p>
            <div class=" text-center">
                    <h4> Create New Account </h4>
-                   <p class="t-large-d"> Do you have any account ? <a href="{{url('/login_user')}}"> Login </a></p>
+                   <p class="t-large-d"> Do you have any account ? <a href="{{url('/login')}}"> Login </a></p>
            </div>
                 <!-- <div class="card-header">{{ __('Register') }}</div> -->
                     <form method="POST" class="form-horizontal" action="{{ route('register') }}">
@@ -17,12 +17,15 @@
                             <div class="form-group" >
                              <!-- <label class="col-md-4 control-label">First Name</label>  -->
                              <div class="col-md-12">
-                               <div class="input-group">
-                                    <!-- <span class="input-group-addon">
-                                    <i class="fa fa-user"></i>
-                                    </span> -->
+                               {{-- <div class="input-group">
+                                <div class="input-group-append">
+                                  <span >
+                                 <i class="fa fa-user"></i>
+                                 </span> </div>
+                            </div> --}}
                                     <input id="firstname" type="text" class="form-control @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" required autocomplete="firstname" placeholder=" First Name " autofocus>
-                      
+                                    
+                                 
                                     @error('firstname')
                                       <span class="invalid-feedback" role="alert">
                                           <strong>{{ $message }}</strong>
@@ -30,7 +33,7 @@
                                     @enderror
                                   </div>
                                 </div>
-                              </div>
+                          
                       
                               <!-- Last Name -->
                             <div class="form-group" >
@@ -143,7 +146,7 @@
                                 <!-- Terms of user and conditions-->
                                 <div class="form-group">
                                     <label class="col-md-12 control-label">
-                                      <p class="disclosure-text">عند التسجيل على الموقع، فإنك توافق على الالتزام بـ <a target="_blank" tapable href="#">شروط الاستخدام</a> "و" <a target="_blank" tapable href="#"> بيان الخصوصية </a>الخاص وصلة.كوم
+                                      <p class="disclosure-text">In Registeration On The Site Your Agree To Comply With <a target="_blank" tapable href="#">Privacy Policy & Terms of Use </a>Of Wasla.com
                                       </p>
                                     </label>
                                     <input type="checkbox" class="btn join-btn-secondary join-btn" data-position-join="right">
@@ -152,7 +155,7 @@
                                 <div class="form-group">
                                   <label class="col-md-4 control-label"></label>
                                     <div class="col-md-12">
-                                      <button type="submit" class="btn btn-waring">Sign up<span class="glyphicon glyphicon-send"></span></button>
+                                      <button type="submit" class="btn btn-dark" style="color: #fff">Sign up<span class="glyphicon glyphicon-send"></span></button>
                                     </div>
                                 </div>
                           </fieldset>

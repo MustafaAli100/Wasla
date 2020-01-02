@@ -68,8 +68,8 @@
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
   <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="collapsibleNavbar">
-  <a class="navbar-brand" href="{{url('/')}}">Logo</a>
+<div class="collapse navbar-collapse" id="collapsibleNavbar" >
+  <a class="navbar-brand"  href="{{url('/homepage')}}">Logo</a>
   <!-- <ul class="navbar-nav" style="margin-left:5%">
     <li class="nav-item">
       <a class="nav-link" href="#"> Projects </a>
@@ -78,12 +78,12 @@
       <a class="nav-link" href="#"></a>
     </li>
   </ul> -->
-  <ul class="navbar-nav" style="margin-left:85%">
+  <ul class="navbar-nav " style="margin-left:85%">
     <li class="nav-item">
-      <a class="nav-link" href="{{url('/register')}}">Sing in</a>
+      <a class="nav-link"  href="{{url('/register')}}">Sing in</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{url('/login_user')}}">Login</a>
+      <a class="nav-link"  href="{{url('/login_user')}}">Login</a>
     </li>
   </ul>
 
@@ -97,25 +97,22 @@
 @yield('content')
 <!-- End Sidebar -->
 <footer class="footer">
-	<div class="container-fluid">
-		<nav class="pull-left">
-			<ul class="nav_foter" style="list-style-type: none">
-				
-				<!-- <li class="nav-item">
-					<a class="nav-link" href="#">
-						Help
-					</a>
-				</li> -->
-				<li class="nav-item">
-					<a class="nav-link" href="{{url('/Trms')}}">
-						Terms of use and privacy statement
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="copyright ml-auto">
-		2000-2019 wasla.com, made  <!--<i class="fa fa-heart heart text-danger"></i>--> by <a href="https://www.themekita.com">Teem  wasla</a> 
-		
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-4">
+              <span class="copyright">Copyright &copy;  wasla.com  2020-2019</span>
+          </div>
+      
+          <div class="col-md-8">
+              <ul class="list-inline quicklinks">
+                  <li class="list-inline-item">
+                      <a class="nav-link" href="{{url('/Trms')}}">
+                     Privacy Policy & Terms of Use</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
 </footer>
 </div>
 </body>

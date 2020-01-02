@@ -71,8 +71,12 @@ button {
     padding-left: 6px;
 }
 
+.alink {
+    color: #36a0fe;
+}
+
 .btn {
-    background-color: darkslategrey;
+    background-color: #36a0fe;
     color: aliceblue;
     font-size: 19px;
     padding: 7px 14px;

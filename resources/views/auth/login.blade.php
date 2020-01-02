@@ -1,13 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.hnav')
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-top:10%">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header text-center">{{ __('Login') }}</div>
 
-                <div class="card-body">
+                <div class="card-body" style="direction: ltr;">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -44,7 +44,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
+                                    <label style="margin-top: 4%;" class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
@@ -58,7 +58,8 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link" href="{{ route('password.request') }}" style="background-color:
+                                    #f4f3f300;color:#007bff;">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif

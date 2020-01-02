@@ -66,7 +66,7 @@ Route::get('/Trms', function () {
     return view('Trms-of-use-and-privacy');
 });
 Route::get('/admin_home', function () {
-    return view('admin.Ahome');
+    return view('admin.dashbord');
 });
 Route::get('/all_projects', function () {
     return view('admin.allprojects');
