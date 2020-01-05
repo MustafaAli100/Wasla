@@ -48,11 +48,42 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item">
+                        @if (Route::has('login'))
+                            @auth
+                                    @if (auth()->user()->hasRole('Adminstrator'))
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url('/dashbord') }}">Home</a>
+                                    </li>
+                                        @elseif(auth()->user()->hasRole('ProjectOwner'))
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ url('/home_owner') }}">Home</a>
+                                        </li>
+                                        @elseif(auth()->user()->hasRole('Programmer'))
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ url('/homePro') }}">Home</a>
+                                        </li>
+                                            @else
+                                            <li class="nav-item">
+                                            <a class="nav-link" href="{{ url('/home_company') }}">Home</a>
+                                            </li>
+                                    @endif
+                            @else
+                            <li class="nav-item">
+                                <a class="nav-link " href="{{ route('login') }}">Login</a>
+                            </li>
+                                @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link " href="{{ route('register') }}">Register</a>
+                                </li>
+                                @endif
+                            @endauth
+                    @endif
+                    {{-- <li class="nav-item">
                         <a class="nav-link " href="{{url('/login')}}">Log in</a>
-                    </li><li class="nav-item">
-                        <a class="nav-link " href="{{url('/register')}}">Sing in</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{{url('/register')}}">Sing in</a>
+                    </li> --}}
                 </ul>
             </div>
         </div>
