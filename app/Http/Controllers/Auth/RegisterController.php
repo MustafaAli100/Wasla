@@ -33,13 +33,13 @@ class RegisterController extends Controller
     protected function registered(Request $request, $user)
     {
         if ($user->hasRole('Adminstrator')) {
-            return view('admin.Ahome');
+            return route('dashboard');
         } elseif($user->hasRole('ProjectOwner')) {
-            return view('owner.Ohome');
+            return route('home_owner');
         }elseif($user->hasRole('Programmer')){
-            return view('programmer.Phome');
+            return route('/homePro');
         }else{
-            return view('company.Chome');
+            return route('home_company');
         }
         
     }
