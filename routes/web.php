@@ -12,14 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home.home');
 });
 Route::get('/payments', function () {
     return view('home.payment');
 });
-Route::get('/homepage', function () {
-    return view('home.home');
-});
+// Route::get('/homepage', function () {
+//     return view('home.home');
+// });
 Route::get('project', function () {
     return view('project');
 });
@@ -96,4 +96,4 @@ Route::resource("posts","postcontroller");
 Route::get("/contact/{id}","postcontroller@contact");
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
