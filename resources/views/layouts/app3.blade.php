@@ -14,7 +14,7 @@
     
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
     <link href="desgin/css/agency.min.css" rel="stylesheet">
-	<script src="js/jquery2.2.4.js"></script>
+	{{-- <script src="js/jquery2.2.4.js"></script> --}}
     
     {{-- <script src="js/bootstrap.min.js"></script> --}}
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -24,7 +24,7 @@
 	<script src="js/plugin/webfont/webfont.min.js"></script>
 	
 
-
+	<link rel="stylesheet" href="css/fonts.min.css">
 
 	<!-- CSS Files -->
 	{{-- <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
@@ -55,7 +55,7 @@
 				<button class="topbar-toggler more"><i class="fa fa-bars"></i></button>
 				<div class="nav-toggle">
 					<button class="btn btn-toggle toggle-sidebar">
-						<i class="icon-menu"></i>
+						<i class="icon icon-menu"></i>
 					</button>
 				</div>
 			</div>
@@ -65,24 +65,9 @@
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue">
 				
 				<div class="container-fluid">
-					<!-- <div class="collapse" id="search-nav">
-						<form class="navbar-left navbar-form nav-search mr-md-3">
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<button type="submit" class="btn btn-search pr-1">
-										<i class="fa fa-search search-icon"></i>
-									</button>
-								</div>
-								<input type="text" placeholder="Search ..." class="form-control">
-							</div>
-						</form>
-					</div> -->
+					
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						<li class="nav-item toggle-nav-search hidden-caret">
-							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
-								<i class="fa fa-search"></i>
-							</a>
-						</li>
+						
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-envelope"></i>
@@ -277,103 +262,106 @@
 			<!-- End Navbar -->
 
 			<!-- </div> -->
-
-<!-- Sidebar -->
-<div class="sidebar sidebar-style-2">
+		</div>
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
-					<ul class="nav nav-primary">
-						<li class="nav-item">
-							<a data-toggle="collapse" href="{{ url('/homePro') }}" class="collapsed" aria-expanded="false">
-								<h3 class="fa fa-home" > Home </h3>
-							</a>
-						</li>
-
-						<li class="nav-item">
-							<a href="{{ url('/home_owner') }}">
-								<i class="fas fa-layer-group"></i>
-								<p>Home Owner</p>
-							</a>
-						</li>
-                        <li class="nav-item">
-							<a href="{{ url('/home_company') }}">
-								<i class="fas fa-layer-group"></i>
-								<p>Home Company</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{ url('/homePro') }}">
-								<i class="fas fa-users"></i>
-								<p>Home Programmer</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{ url('/add_project') }}">
-								<i class="fas fa-pen-square"></i>
-								<p>Add Project </p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{ url('/show_offer') }}">
-								<i class="fa fa-copy"></i>
-								<p>Programmer Offers</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{ url('/show_project') }}">
-								<i class="fa fa-copy"></i>
-								<p>Show Project</p>
-							</a>
-						</li>
-					</ul>
+					<div>
+						<ul class="nav nav-primary">
+							<li class="nav-item">
+								<a data-toggle="collapse" href="{{ url('/homePro') }}" class="collapsed" aria-expanded="false">
+									<h3 class="fa fa-home" > Home </h3>
+								</a>
+							</li>
+	
+							<li class="nav-item">
+								<a href="{{ url('/home_owner') }}">
+									<i class="fas fa-layer-group"></i>
+									<p>Home Owner</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url('/home_company') }}">
+									<i class="fas fa-layer-group"></i>
+									<p>Home Company</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url('/homePro') }}">
+									<i class="fas fa-users"></i>
+									<p>Home Programmer</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url('/add_project') }}">
+									<i class="fas fa-pen-square"></i>
+									<p>Add Project </p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url('/show_offer') }}">
+									<i class="fa fa-copy"></i>
+									<p>Programmer Offers</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="{{ url('/show_project') }}">
+									<i class="fa fa-copy"></i>
+									<p>Show Project</p>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-        </div>
-        @yield('content')
+		<!-- End Sidebar -->
+		<div>
+       		 @yield('content')
         </diV>
-<!-- End Sidebar -->
-<footer class="footer">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-4">
-				<span class="copyright">Copyright &copy;  wasla.com  2020-2019</span>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<span class="copyright">Copyright &copy;  wasla.com  2020-2019</span>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li class="list-inline-item">
+								<a class="nav-link" href="{{url('/Trms')}}">
+							Privacy Policy & Terms of Use</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<ul class="list-inline social-buttons">
-					<li class="list-inline-item">
-						<a href="#">
-							<i class="fab fa-twitter"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<ul class="list-inline quicklinks">
-					<li class="list-inline-item">
-						<a class="nav-link" href="{{url('/Trms')}}">
-					   Privacy Policy & Terms of Use</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+		</footer>
 	</div>
-</footer>
-		</div>
 		
 			
 	<!--   Core JS Files   -->
-	<script src="js/core/jquery.3.2.1.min.js"></script>
+	{{-- <script src="js/core/jquery.3.2.1.min.js"></script> --}}
 	<script src="js/core/popper.min.js"></script>
 	{{-- <script src="js/core/bootstrap.min.js"></script> --}}
 

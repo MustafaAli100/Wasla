@@ -29,9 +29,13 @@
                                 </div>
                             </div>
                             <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Confirm</a>
-                                </li>
+                                @auth
+                                @if (auth()->user()->hasRole('ProjectOwner'))
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-home-tab"  href="/payments">Confirm</a>
+                                    </li>
+                                @endif
+                            @endauth
 
                             </ul>
                         </div>
@@ -63,9 +67,13 @@
 
                             </div>
                             <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Confirm</a>
-                                </li>
+                                @auth
+                                    @if (auth()->user()->hasRole('Programmer')||auth()->user()->hasRole('Company'))
+                                        <li class="nav-item">
+                                            <a class="nav-link active"  href="/homePro" >Confirm</a>
+                                        </li>
+                                    @endif
+                                @endauth
 
                             </ul>
                         </div>

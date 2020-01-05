@@ -83,7 +83,7 @@
       <a class="nav-link"  href="{{url('/register')}}">Sing in</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  href="{{url('/login_user')}}">Login</a>
+      <a class="nav-link"  href="{{url('/login')}}">Login</a>
     </li>
   </ul>
 

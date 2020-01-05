@@ -135,8 +135,8 @@
                                     <!-- <span class="input-group-addon"><i class="fa fa-check"></i></span> -->
                                       <select class="selectpicker form-control" id="sel1" name="type" required>
                                         <!--- <option selected></option>-->
-                                        <option value="ProjectOwner"> <span><i class="fa fa-address-book-o"></i></span>Who are you ?</option>
-                                        <option value="Programmer">Project Owner</option>
+                                        <option value=""> <span><i class="fa fa-address-book-o"></i></span>Who are you ?</option>
+                                        <option value="ProjectOwner">Project Owner</option>
                                         <option value="Programmer">Programmer</option>
                                         <option value="Company">Programming Company</option>
                                       </select>

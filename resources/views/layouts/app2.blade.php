@@ -5,34 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/fonts.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="layouts/css/pro.css">
+    {{-- <link rel="stylesheet" href="layouts/css/pro.css"> --}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="Layouts/css/font-awesome.min.css" />
+    {{-- <link rel="stylesheet" href="Layouts/css/font-awesome.min.css" /> --}}
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
 	<link href="desgin/css/agency.min.css" rel="stylesheet">
-    <script src="Layouts/js/jquery2.2.4.js"></script>
-    <script src="Layouts/js/jq.js"></script>
-    <script src="Layouts/js/bootstrap.min.js"></script>
+    <script src="js/jquery2.2.4.js"></script>
+    <script src="js/jq.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     
 	<!-- Fonts and icons -->
 	<script src="js/plugin/webfont/webfont.min.js"></script>
 	
-
-	<script>
-		WebFont.load({
-			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls:['assets/css/fonts.min.css']},
-			active: function() {
-				sessionStorage.fonts = true;
-			}
-		});
-	</script>
 
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -65,7 +54,7 @@
 				<button class="topbar-toggler more"><i class="fa fa-bars"></i></button>
 				<div class="nav-toggle">
 					<button class="btn btn-toggle toggle-sidebar">
-				  <i class="icon-menu"></i>
+				  		<i class="icon-menu"></i>
 					</button>
 				</div>
 			</div>
@@ -242,12 +231,10 @@
 				</div>
 			</nav>
 			<!-- End Navbar -->
+		</div>
 
-            
-			</div>
-
-<!-- Sidebar -->
-<div class="sidebar sidebar-style-2">
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 					<ul class="nav nav-primary">
@@ -297,48 +284,50 @@
 			</div>
 		</div>
 
-<!-- End Sidebar -->
-@yield('content')
+		<!-- End Sidebar -->
+		<DIV>
+			@yield('content')
+		</DIV>
         <!-- </diV> -->
-<!-- End Sidebar -->
-<footer class="footer">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-4">
-				<span class="copyright">Copyright &copy;  wasla.com  2020-2019</span>
+		<!-- End Sidebar -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<span class="copyright">Copyright &copy;  wasla.com  2020-2019</span>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li class="list-inline-item">
+								<a class="nav-link" href="{{url('/Trms')}}">
+							Privacy Policy & Terms of Use</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<ul class="list-inline social-buttons">
-					<li class="list-inline-item">
-						<a href="#">
-							<i class="fab fa-twitter"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<ul class="list-inline quicklinks">
-					<li class="list-inline-item">
-						<a class="nav-link" href="{{url('/Trms')}}">
-					   Privacy Policy & Terms of Use</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
+		</footer>
 </div>
-		
+	
 			
 	<!--   Core JS Files   -->
 	<script src="js/core/jquery.3.2.1.min.js"></script>
