@@ -9,15 +9,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!--     <link rel="stylesheet" href="Layouts/css/bootstrap.min.css"/>-->
-    <link rel="stylesheet" href="layouts/css/pro.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="Layouts/css/font-awesome.min.css" />
+    
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
     <link href="desgin/css/agency.min.css" rel="stylesheet">
-    <script src="Layouts/js/jquery2.2.4.js"></script>
-    <script src="Layouts/js/jq.js"></script>
-    <script src="Layouts/js/bootstrap.min.js"></script>
+	<script src="js/jquery2.2.4.js"></script>
+    
+    {{-- <script src="js/bootstrap.min.js"></script> --}}
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     
@@ -25,18 +24,10 @@
 	<script src="js/plugin/webfont/webfont.min.js"></script>
 	
 
-	<script>
-		WebFont.load({
-			google: {"families":["Lato:300,400,700,900"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls:['assets/css/fonts.min.css']},
-			active: function() {
-				sessionStorage.fonts = true;
-			}
-		});
-	</script>
+
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	{{-- <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
 	<link rel="stylesheet" href="css/atlantis.min.css">
     
 
@@ -221,7 +212,7 @@
 							</ul>
 						</li>
 						
-						<li class="nav-item dropdown hidden-caret">
+						{{-- <li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
 									<img src="img/profile.jpg" alt="..." class="avatar-img rounded-circle">
@@ -248,7 +239,38 @@
 									</li>
 								</div>
 							</ul>
-						</li>
+						</li> --}}
+						<ul class="navbar-nav ml-auto">
+							<!-- Authentication Links -->
+							@guest
+								<li class="nav-item">
+									<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+								</li>
+								@if (Route::has('register'))
+									<li class="nav-item">
+										<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+									</li>
+								@endif
+							@else
+								<li class="nav-item dropdown">
+									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+										{{auth()->user()->firstname}} 
+									</a>
+	
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="{{ route('logout') }}"
+										   onclick="event.preventDefault();
+														 document.getElementById('logout-form').submit();">
+											{{ __('Logout') }}
+										</a>
+	
+										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+											@csrf
+										</form>
+									</div>
+								</li>
+							@endguest
+						</ul>
 					</ul>
 				</div>
 			</nav>
@@ -353,7 +375,7 @@
 	<!--   Core JS Files   -->
 	<script src="js/core/jquery.3.2.1.min.js"></script>
 	<script src="js/core/popper.min.js"></script>
-	<script src="js/core/bootstrap.min.js"></script>
+	{{-- <script src="js/core/bootstrap.min.js"></script> --}}
 
 	<!-- jQuery UI -->
 	<script src="js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
