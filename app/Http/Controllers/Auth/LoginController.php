@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -28,13 +29,13 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         if ($user->hasRole('Adminstrator')) {
-            return view('admin.Ahome');
+            return redirect('dashboard');
         } elseif($user->hasRole('ProjectOwner')) {
-            return view('owner.Ohome');
+            return redirect('home_owner');
         }elseif($user->hasRole('Programmer')){
-            return view('programmer.Phome');
+            return redirect('/homePro');
         }else{
-            return view('company.Chome');
+            return redirect('home_company');
         }
     }
     // protected $redirectTo = '/home';
