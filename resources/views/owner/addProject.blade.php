@@ -21,7 +21,7 @@
             <!-- <h2> Add Project</h2> -->
     </div>
         <div class="panel-body"> 
-         <form method="POST" action="" value="">
+         <form method="POST" action="/newproject">
             <div class="bade-black">
                     <label for="project__title" class="control-label">Project Title </label>
                 <input id="project__title" class=" form-control" placeholder="Listed Title For a brief Describes Your Project Accurately" name="title" type="text">

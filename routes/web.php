@@ -97,3 +97,7 @@ Route::get("/contact/{id}","postcontroller@contact");
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+// start of owner projrct routes
+
+Route::post("/newproject","OwnerController@store");
