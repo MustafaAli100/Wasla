@@ -35,7 +35,7 @@ class OwnerController extends Controller
     public function store(Request $request)
     {
         //
-        $data = $request ->()
+        $data = $request ->all();
     }
 
     /**
