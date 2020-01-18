@@ -28,6 +28,7 @@ class LoginController extends Controller
      */
     protected function authenticated(Request $request, $user)
     {
+
         if ($user->hasRole('Adminstrator')) {
             return redirect('dashboard');
         } elseif($user->hasRole('ProjectOwner')) {

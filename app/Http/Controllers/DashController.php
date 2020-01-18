@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 use App\Project;
-use App\User;
-
-class OwnerController extends Controller
+class DashController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,13 +14,15 @@ class OwnerController extends Controller
     public function index()
     {
         //
-        $user_id=auth()->user()->id;
-        $user=User::findOrFail($user_id);
-        $projects=$user->projects; //get all Ower projects 
-        return view('owner.Ohome',compact('projects'));
-
+        return view('admin.dashbord');
     }
 
+    public function getAllProjects()
+    {
+        // get all projects in the system
+        $projects = Project::all();
+        return view('admin.acceptance',compact('projects'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -31,7 +30,7 @@ class OwnerController extends Controller
      */
     public function create()
     {
-        return view('owner.addproject');
+        //
     }
 
     /**
@@ -43,27 +42,6 @@ class OwnerController extends Controller
     public function store(Request $request)
     {
         //
-        $user_id=auth()->user()->id;
-        $data = request()->validate([ 
-            'title' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string'],
-            'skills' => ['required', 'string', ],
-            'budget' => ['required'],
-            'duration' => ['required',],
-        ]);
-        $newproject = Project::create([
-            'Pname' => $data['title'],
-            'price' => $data['budget'],
-            'time' => $data['duration'],
-            'skills'=> $data['skills'],
-            'description'=> $data['description'],
-            'user_id'=> $user_id,
-
-        ]);
-        if($newproject){
-            return redirect()->route('Ownerhome');
-        }
-       
     }
 
     /**
@@ -72,11 +50,9 @@ class OwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showProject($id)
+    public function show($id)
     {
         //
-        $singleproject = Project::findOrfail($id);
-        return view('owner.show_project',compact('singleproject'));
     }
 
     /**
