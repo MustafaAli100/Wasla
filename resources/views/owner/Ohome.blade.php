@@ -1,4 +1,3 @@
-
 @extends('layouts.app3')
 @section('content')
 		<div class="main-panel">
@@ -18,88 +17,37 @@
 				</div>
 				<div class="col-12">
 					<!-- <h1 class="m-3 p-3 d-flex justify-content-center bg-primary">Added project</h1> -->
-					<a  class="show" href="#" >
-					<div class="card shadow mt-3 mb-3 p-3">
-				         <div class="card-body">
+					@if (count($projects)>0)
+						@foreach ($projects as $project)
+						<a class="show" href="/showProject/{{$project->id}}" >
+							<div class="card shadow mt-3 mb-3 p-3">
+								<div class="card-body">
 									<div class="d-flex">
 										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <span class="badge badge-count p-0"> 4 </span>
-                                            <span class="text-muted">offers</span>
-                                            <span class="text-muted pl-3"> 15 </span>
-                                            <span class="text-muted"> day</span>
-                                            <span class="text-muted pl-3"> 300 </span>
-                                            <span class="text-muted ">$ </span>
+											<h6 class="text-uppercase fw-bold mb-1">{{ $project->Pname }} </h6>
+											<span class="badge badge-count p-0"> 4 </span>
+											<span class="text-muted">offers</span>
+											<span class="text-muted pl-3"> {{ $project->time }} </span>
+											<span class="text-muted"> day</span>
+											<span class="text-muted pl-3"> {{ $project->price }} </span>
+											<span class="text-muted ">$ </span>
 										</div>
-									<div class="float-right pt-1">
+										<div class="float-right pt-1">
 											<small class="text-muted">8:40 PM</small>
+										</div>
 									</div>
-                        </div>
-					</div>
-					<a  class="show" href="#" >
+								</div>
+							</div>
+						</a>
+					@endforeach
+					@else
+						<div class="d-flex justify-content-center mt-5">
+							<h3 class="mt-5">
+								No projects were added
+							</h3>
+						</div>
+					@endif
 				</div>
-				
-				<a  class="show" href="#" >                
-                <div class="card shadow mt-3 mb-3 p-3">
-				        <div class="card-body">
-									<div class="d-flex">
-										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <span class="badge badge-count p-0"> 4 </span>
-                                            <span class="text-muted">offers</span>
-                                            <span class="text-muted pl-3"> 15 </span>
-                                            <span class="text-muted"> day</span>
-                                            <span class="text-muted pl-3"> 300 </span>
-                                            <span class="text-muted ">$ </span>
-										</div>
-									        <div class="float-right pt-1">
-											<small class="text-muted">1 Day Ago</small>
-                                            </div>  
-                                    </div>
-                        </div>
-				</div>
-				</a>
-				<a  class="show" href="#" >  
-                <div class="card shadow mt-3 mb-3 p-3">
-				        <div class="card-body">
-									<div class="d-flex">
-										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <span class="badge badge-count p-0"> 4 </span>
-                                            <span class="text-muted">offers</span>
-                                            <span class="text-muted pl-3"> 15 </span>
-                                            <span class="text-muted"> day</span>
-                                            <span class="text-muted pl-3"> 300 </span>
-                                            <span class="text-muted ">$ </span>
-										</div>
-									        <div class="float-right pt-1">
-											<small class="text-muted">1 Day Ago</small>
-                                            </div>  
-                                    </div>
-                        </div>
-				</div>
-				</a>
-				<a  class="show" href="#" >
-                <div class="card shadow mt-3 mb-3 p-3">
-				        <div class="card-body">
-									<div class="d-flex">
-										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <span class="badge badge-count p-0"> 4 </span>
-                                            <span class="text-muted">offers</span>
-                                            <span class="text-muted pl-3"> 15 </span>
-                                            <span class="text-muted"> day</span>
-                                            <span class="text-muted pl-3"> 300 </span>
-                                            <span class="text-muted ">$ </span>
-										</div>
-									        <div class="float-right pt-1">
-											<small class="text-muted">1 Day Ago</small>
-                                            </div>  
-                                    </div>
-                        </div>
-				</div>
-				</a>
-			</div>
 </div>
 		</div>
 			

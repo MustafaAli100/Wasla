@@ -44,15 +44,7 @@ Route::get('/show_programmer', function () {
 Route::get('/edit_programmer', function () {
     return view('programmer.editprogram');
 });
-Route::get('/home_owner', function () {
-    return view('owner.Ohome');
-});
-Route::get('/add_project', function () {
-    return view('owner.addProject');
-});
-Route::get('/show_project', function () {
-    return view('owner.show_project');
-});
+
 Route::get('/show_offer', function () {
     return view('owner.offers');
 });
@@ -71,15 +63,10 @@ Route::get('/admin_home', function () {
 Route::get('/all_projects', function () {
     return view('admin.allprojects');
 });
-Route::get('/acceptance', function () {
-    return view('admin.acceptance');
-});
 Route::get('/all_users', function () {
     return view('admin.allusers');
 });
-Route::get('/dashbord', function () {
-    return view('admin.dashbord');
-});
+
 
 Route::get('/login_user', function () {
     return view('login');
@@ -97,3 +84,15 @@ Route::get("/contact/{id}","postcontroller@contact");
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+// start of Super admin routes
+Route::get("/dashbord","DashController@index");
+Route::get("/acceptance","DashController@getAllProjects");
+// End of Super admin routes
+
+// start of owner projrct routes
+Route::post("/newproject","OwnerController@store");
+Route::get('/add_project','OwnerController@create');
+Route::get('/home_owner','OwnerController@index')->name('Ownerhome');
+Route::get('/showProject/{id}','OwnerController@showProject');
+// End of owner projrct routes

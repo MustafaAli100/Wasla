@@ -66,23 +66,16 @@
 								<div class="card-body">
                                 <div class="card-header">
 									<div class="card-title">Projects Under Way</div>
-								</div><div class="card-list">
-										
-                                <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
+								</div>
+								<div class="card-list">		
+									<div class="item-list">
+										<div class="flex-1 ml-3 pt-1">
 											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        </div>
+											<div class="username">Ali Ahmed</div>
+										</div>
+										<button type="submit" class="btn btn-danger">Delete</button>
+									</div>
+                                </div>
                                         
 									</div>
 								</div>
