@@ -24,7 +24,7 @@
 	<script src="js/plugin/webfont/webfont.min.js"></script>
 	
 
-	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/fonts-.min.css">
 
 	<!-- CSS Files -->
 	{{-- <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
