@@ -29,9 +29,7 @@ Route::get('/fadwa', function () {
 Route::get('/pro', function () {
     return view('layouts.app3');
 });
-Route::get('/homePro', function () {
-    return view('programmer.Phome');
-});
+
 Route::get('/home_company', function () {
     return view('Company.home');
 });
@@ -45,9 +43,7 @@ Route::get('/edit_programmer', function () {
     return view('programmer.editprogram');
 });
 
-Route::get('/show_offer', function () {
-    return view('owner.offers');
-});
+
 Route::get('/confirm', function () {
     return view('confirm');
 });
@@ -94,8 +90,17 @@ Route::get("/acceptance","DashController@getAllProjects");
 Route::post("/newproject","OwnerController@store");
 Route::get('/add_project','OwnerController@create');
 Route::get('/home_owner','OwnerController@index')->name('Ownerhome');
- Route::get('/showProject','OwnerController@showProject');
-// Route::get('/showProject', function () {
-//     return view('owner.show_project');
-// });
+Route::get('/showProject/{id}','OwnerController@showProject');
 // End of owner projrct routes
+
+// Start of programmer routes
+Route::get('/homePro','ProgrammerController@index');
+//End of programmer routes 
+
+//start of Global routes
+Route::get('/showOffer','GlobalController@showoffer');
+//End of global routes
+
+
+
+
