@@ -72,11 +72,17 @@ class OwnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showProject($id)
+    // public function showProject($id)
+    // {
+    //     //
+    //     $singleproject = Project::findOrfail($id);
+    //     return view('owner.show_project',compact('singleproject'));
+    // }
+    public function showProject()
     {
         //
-        $singleproject = Project::findOrfail($id);
-        return view('owner.show_project',compact('singleproject'));
+        // $singleproject = Project::findOrfail($id);
+        return view('owner.show_project');
     }
 
     /**

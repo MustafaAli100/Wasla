@@ -1,4 +1,4 @@
-@extends('layouts.app3')
+@extends('layouts.app2')
 @section('content')
       <div class="main-panel">
         <div class="content">
@@ -6,7 +6,7 @@
                 <div class="page-inner py-5">
                     <div class="d-flex align-items-left  flex-column flex-md-row">
                         <div style="padding-top: 5%;">
-                            <h2 class="text-white pb-2 fw-bold">Add New Project</h2>
+                            {{-- <h2 class="text-white pb-2 fw-bold">Add New Project</h2> --}}
                             <!-- <h5 class="text-white op-7 mb-2">Add your project with the required specifications and skills and Receive offers</h5> -->
                         </div>
                         <div class="ml-md-auto py-2 py-md-0">

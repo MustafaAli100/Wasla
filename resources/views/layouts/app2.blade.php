@@ -44,7 +44,7 @@
 			<div class="logo-header" data-background-color="blue">
 				
 				<a href="index.html" class="logo">
-					<img src="img/logo.svg" alt="navbar brand" class="navbar-brand">
+					<img  src="desgin/img/WaslaLogoS.png" alt="">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -65,11 +65,7 @@
 				
 				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						<li class="nav-item toggle-nav-search hidden-caret">
-							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
-								<i class="fa fa-search"></i>
-							</a>
-						</li>
+
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-envelope"></i>
@@ -198,35 +194,37 @@
 								</li>
 							</ul>
 						</li>
-						
-						<li class="nav-item dropdown hidden-caret">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
-								<div class="avatar-sm">
-									<img src="img/profile.jpg" alt="..." class="avatar-img rounded-circle">
-								</div>
-							</a>
-							<ul class="dropdown-menu dropdown-user animated fadeIn">
-								<div class="dropdown-user-scroll scrollbar-outer">
-									<li>
-										<div class="user-box">
-											<div class="avatar-lg"><img src="img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
-											<div class="u-text">
-												<h4>Hizrian</h4>
-												<p class="text-muted">admin@example.com</p>
-											</div>
-										</div>
+						<ul class="navbar-nav ml-auto">
+							<!-- Authentication Links -->
+							@guest
+								<li class="nav-item">
+									<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+								</li>
+								@if (Route::has('register'))
+									<li class="nav-item">
+										<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
 									</li>
-									<li>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">My Profile</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Edite Profile</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Logout</a>
-									</li>
-								</div>
-							</ul>
-						</li>
+								@endif
+							@else
+								<li class="nav-item dropdown">
+									<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+										{{auth()->user()->firstname}} 
+									</a>
+	
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="{{ route('logout') }}"
+										   onclick="event.preventDefault();
+														 document.getElementById('logout-form').submit();">
+											{{ __('Logout') }}
+										</a>
+	
+										<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+											@csrf
+										</form>
+									</div>
+								</li>
+							@endguest
+						</ul>
 					</ul>
 				</div>
 			</nav>
@@ -234,55 +232,15 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">
-			<div class="sidebar-wrapper scrollbar scrollbar-inner">
-				<div class="sidebar-content">
-					<ul class="nav nav-primary">
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-								<h3 class="fa fa-home" > Home </h3>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{url('/dashbord')}}">
-								<i class="fas fa-layer-group"></i>
-								<p>Home</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{url('/dashbord')}}">
-								<i class="fas fa-layer-group"></i>
-								<p>dashboard</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{url('/all_users')}}">
-								<i class="fas fa-users"></i>
-								<p>Users</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{url('/all_projects')}}">
-								<i class="fas fa-pen-square"></i>
-								<p>Projects</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{url('/acceptance')}}">
-								<i class="fas fa-th-list"></i>
-								<p>acceptance</p>
-							</a>
-						</li>
-						<!-- <li class="nav-item">
-							<a href="{{url('/dashbord')}}">
-								<i class="fa fa-copy"></i>
-								<p>Immplemented Progect</p>
-							</a>
-						</li> -->
-					</ul>
-				</div>
-			</div>
-		</div>
+		@if (auth()->user()->hasRole('Adminstrator'))
+			@include('sidebar.adminsidebar')
+		@elseif(auth()->user()->hasRole('ProjectOwner'))
+			@include('sidebar.ownersidebar')
+		@else
+			@include('sidebar.programmersidebar')
+		@endif
+		{{-- start admin sidebar --}}
+		
 
 		<!-- End Sidebar -->
 		<DIV>

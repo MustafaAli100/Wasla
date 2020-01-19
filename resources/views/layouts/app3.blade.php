@@ -2,40 +2,43 @@
 <html lang="en">
 
 	<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
-    <link href="desgin/css/agency.min.css" rel="stylesheet">
-	{{-- <script src="js/jquery2.2.4.js"></script> --}}
-    
-    {{-- <script src="js/bootstrap.min.js"></script> --}}
-    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
+		<link href="desgin/css/agency.min.css" rel="stylesheet">
+		{{-- <script src="js/jquery2.2.4.js"></script> --}}
+		
+		{{-- <script src="js/bootstrap.min.js"></script> --}}
+		<script src="js/jquery2.2.4.js"></script>
+ 		<script src="js/jq.js"></script>
+   		 <script src="js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-    
-	<!-- Fonts and icons -->
-	<script src="js/plugin/webfont/webfont.min.js"></script>
-	
+		
+		<!-- Fonts and icons -->
+		<script src="js/plugin/webfont/webfont.min.js"></script>
+		
 
-	<link rel="stylesheet" href="css/fonts-.min.css">
+		<link rel="stylesheet" href="css/fonts-.min.css">
 
-	<!-- CSS Files -->
-	{{-- <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
-	<link rel="stylesheet" href="css/atlantis.min.css">
-    
+		<!-- CSS Files -->
+		{{-- <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
+		<link rel="stylesheet" href="css/atlantis.min.css">
+		
 
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="css/demo.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	
-	
+		<!-- CSS Just for demo purpose, don't include it in your project -->
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		
 
 </head>
 <body>
@@ -45,7 +48,7 @@
 			<div class="logo-header" data-background-color="blue">
 				
 				<a href="index.html" class="logo">
-					<img src="img/logo.svg" alt="navbar brand" class="navbar-brand">
+					<img  src="desgin/img/WaslaLogoS.png" alt="">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -264,7 +267,7 @@
 			<!-- </div> -->
 		</div>
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">
+		{{-- <div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 					<div>
@@ -315,7 +318,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> --}}
 		<!-- End Sidebar -->
 		<div>
        		 @yield('content')

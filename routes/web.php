@@ -94,5 +94,8 @@ Route::get("/acceptance","DashController@getAllProjects");
 Route::post("/newproject","OwnerController@store");
 Route::get('/add_project','OwnerController@create');
 Route::get('/home_owner','OwnerController@index')->name('Ownerhome');
-Route::get('/showProject/{id}','OwnerController@showProject');
+ Route::get('/showProject','OwnerController@showProject');
+// Route::get('/showProject', function () {
+//     return view('owner.show_project');
+// });
 // End of owner projrct routes
