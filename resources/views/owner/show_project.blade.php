@@ -10,7 +10,7 @@
 							<h5 class="text-white op-7 mb-2"> Department Project <i class="fa fa-clock mr-2"> </i> 1 minute ago  </li></h5>
 						</div>
 						<div class="ml-md-auto py-2 py-md-0">
-							<a href="#" class="btn btn-secondary btn-round"> <i class="fa fa-plus mr-2"> </i> Add Show </a>
+							<a href="#" class="btn btn-secondary btn-round"> <i class="fa fa-plus mr-2"> </i> Add offer </a>
 						</div>
 					</div>
 				</div>

@@ -69,7 +69,7 @@
   <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="collapsibleNavbar" >
-  <a class="navbar-brand"  href="{{url('/homepage')}}">Logo</a>
+  <a class="navbar-brand"  href="{{url('/homepage')}}"><img  src="desgin/img/WaslaLogoS.png" alt=""></a>
   <!-- <ul class="navbar-nav" style="margin-left:5%">
     <li class="nav-item">
       <a class="nav-link" href="#"> Projects </a>

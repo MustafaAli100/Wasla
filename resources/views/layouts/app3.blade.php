@@ -2,40 +2,23 @@
 <html lang="en">
 
 	<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
-    <link href="desgin/css/agency.min.css" rel="stylesheet">
-	{{-- <script src="js/jquery2.2.4.js"></script> --}}
-    
-    {{-- <script src="js/bootstrap.min.js"></script> --}}
-    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-    
-	<!-- Fonts and icons -->
-	<script src="js/plugin/webfont/webfont.min.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery2.2.4.js"></script>
+		<script src="js/jquery2.2.4.js"></script>
+ 		
+		   <script src="js/bootstrap.js"></script>
+		   <script src="js/bootstrap.min.js"></script>
+		<!-- Fonts and icons -->
+		<script src="js/plugin/webfont/webfont.min.js"></script>
 	
-
-	<link rel="stylesheet" href="css/fonts.min.css">
-
-	<!-- CSS Files -->
-	{{-- <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
-	<link rel="stylesheet" href="css/atlantis.min.css">
-    
-
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="css/demo.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	
-	
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/atlantis.min.css">
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		
 
 </head>
 <body>
@@ -45,7 +28,7 @@
 			<div class="logo-header" data-background-color="blue">
 				
 				<a href="index.html" class="logo">
-					<img src="img/logo.svg" alt="navbar brand" class="navbar-brand">
+					<img  src="desgin/img/WaslaLogoS.png" alt="">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -65,9 +48,8 @@
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue">
 				
 				<div class="container-fluid">
-					
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						
+
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-envelope"></i>
@@ -195,8 +177,7 @@
 									<a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i> </a>
 								</li>
 							</ul>
-						</li>
-						
+						</li>						
 						{{-- <li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
@@ -264,58 +245,13 @@
 			<!-- </div> -->
 		</div>
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">
-			<div class="sidebar-wrapper scrollbar scrollbar-inner">
-				<div class="sidebar-content">
-					<div>
-						<ul class="nav nav-primary">
-							<li class="nav-item">
-								<a data-toggle="collapse" href="{{ url('/homePro') }}" class="collapsed" aria-expanded="false">
-									<h3 class="fa fa-home" > Home </h3>
-								</a>
-							</li>
-	
-							<li class="nav-item">
-								<a href="{{ url('/home_owner') }}">
-									<i class="fas fa-layer-group"></i>
-									<p>Home Owner</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="{{ url('/home_company') }}">
-									<i class="fas fa-layer-group"></i>
-									<p>Home Company</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="{{ url('/homePro') }}">
-									<i class="fas fa-users"></i>
-									<p>Home Programmer</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="{{ url('/add_project') }}">
-									<i class="fas fa-pen-square"></i>
-									<p>Add Project </p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="{{ url('/show_offer') }}">
-									<i class="fa fa-copy"></i>
-									<p>Programmer Offers</p>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="{{ url('/show_project') }}">
-									<i class="fa fa-copy"></i>
-									<p>Show Project</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+		@if (auth()->user()->hasRole('Adminstrator'))
+			@include('sidebar.adminsidebar')
+		@elseif(auth()->user()->hasRole('ProjectOwner'))
+			@include('sidebar.ownersidebar')
+		@else
+			@include('sidebar.programmersidebar')
+		@endif
 		<!-- End Sidebar -->
 		<div>
        		 @yield('content')
@@ -331,17 +267,17 @@
 						<ul class="list-inline social-buttons">
 							<li class="list-inline-item">
 								<a href="#">
-									<i class="fab fa-twitter"></i>
+									<i class="icon icon-social-twitter"></i>
 								</a>
 							</li>
 							<li class="list-inline-item">
 								<a href="#">
-									<i class="fab fa-facebook-f"></i>
+									<i class="icon icon-social-facebook"></i>
 								</a>
 							</li>
 							<li class="list-inline-item">
 								<a href="#">
-									<i class="fab fa-linkedin-in"></i>
+									<i class="icon icon-social-linkedin"></i>
 								</a>
 							</li>
 						</ul>

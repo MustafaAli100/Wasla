@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">WASLA</a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img  src="desgin/img/WaslaLogoS.png" alt=""></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -215,7 +215,7 @@
                             <span>0 projects implemented </span>
                         </div>
                         <div class="free-skill">
-                            <span class="fre-label"><a href="http://7reef.com/profiles/?skill_profile=graphic-design">اDesigner</a></span> </div>
+                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -229,7 +229,7 @@
                             <span>0 projects implemented </span>
                         </div>
                         <div class="free-skill">
-                            <span class="fre-label"><a href="http://7reef.com/profiles/?skill_profile=graphic-design">اDesigner</a></span> </div>
+                             </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -244,7 +244,7 @@
                             <span>0 projects implemented </span>
                         </div>
                         <div class="free-skill">
-                            <span class="fre-label"><a href="http://7reef.com/profiles/?skill_profile=graphic-design">اDesigner</a></span> </div>
+                         </div>
                     </div>
                 </div>
                 </div>
@@ -262,7 +262,7 @@
                                 <span>0 projects implemented </span>
                             </div>
                             <div class="free-skill">
-                                <span class="fre-label"><a href="http://7reef.com/profiles/?skill_profile=graphic-design">اDesigner</a></span> </div>
+                                </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -276,7 +276,7 @@
                                 <span>0 projects implemented </span>
                             </div>
                             <div class="free-skill">
-                                <span class="fre-label"><a href="http://7reef.com/profiles/?skill_profile=graphic-design">اDesigner</a></span> </div>
+                               </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -291,7 +291,7 @@
                                 <span>0 projects implemented </span>
                             </div>
                             <div class="free-skill">
-                                <span class="fre-label"><a href="http://7reef.com/profiles/?skill_profile=graphic-design">اDesigner</a></span> </div>
+                               </div>
                         </div>
                     </div>
                    

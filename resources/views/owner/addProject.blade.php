@@ -6,7 +6,7 @@
                 <div class="page-inner py-5">
                     <div class="d-flex align-items-left  flex-column flex-md-row">
                         <div style="padding-top: 5%;">
-                            <h2 class="text-white pb-2 fw-bold">Add New Project</h2>
+                            {{-- <h2 class="text-white pb-2 fw-bold">Add New Project</h2> --}}
                             <!-- <h5 class="text-white op-7 mb-2">Add your project with the required specifications and skills and Receive offers</h5> -->
                         </div>
                         <div class="ml-md-auto py-2 py-md-0">
@@ -45,17 +45,17 @@
                     <div class="col-sm-6">
                         <div class="form-group project__budget-select " data-selectize-keyboard="disable">
                                 <label for="project__budget" class="control-label">Projected Budget</label>
-                        <select name="budget" id="project__budget" class="form-control" data-ui="placeholder-select">
-                            <option value="" selected="" disabled="" hidden=""></option>
-                            <option value="25-50">25 - 50 $1</option>
-                            <option value="50-100">50 - 100 $1</option>
-                            <option value="100-250">100 - 250 $1 </option>
-                            <option value="250-500">250 - 500 $1</option>
-                            <option value="500-1000">500 - 1000 $1</option>
-                            <option value="1000-2500">1000 - 2500 $1</option>
-                            <option value="2500-5000">2500 - 5000 $1</option>
-                            <option value="5000-10000">5000 - 10000 $1</option>
-                        </select>
+                                <select name="budget" id="project__budget" class="form-control" data-ui="placeholder-select">
+                                    <option value="" selected="" disabled="" hidden=""></option>
+                                    <option value="25-50">25 - 50 $1</option>
+                                    <option value="50-100">50 - 100 $1</option>
+                                    <option value="100-250">100 - 250 $1 </option>
+                                    <option value="250-500">250 - 500 $1</option>
+                                    <option value="500-1000">500 - 1000 $1</option>
+                                    <option value="1000-2500">1000 - 2500 $1</option>
+                                    <option value="2500-5000">2500 - 5000 $1</option>
+                                    <option value="5000-10000">5000 - 10000 $1</option>
+                                </select>
                             <p class="help-block text-zeta pull-right customF">Choose A Budget Suitable To Get To Offers Good </p>
                         </div>
                     </div>
@@ -63,12 +63,13 @@
                             <div class="form-group">
                                     <label for="project__duration" class="control-label">اExpected delivery time</label>
                                 <div class="input-group">
-                                    <input type="number" name="duration" id="project__duration" min="1" value="" class="customIpg form-control "><span class="input-group-text">Days</span>
+                                    <input type="number" name="duration" id="project__duration" min="1" value="" class="customIpg form-control ">
+                                    <span class="input-group-text">Days</span>
                                 </div>
                                 <p class="help-block text-zeta pull-right customF">When you Need To Receive Your Project </p>
                             </div>
                         </div>
-                    </div>
+                </div>
                     <div class="form-group">
                         <div class=" input-group">
                             <button type="submit" name="project__submit" class="btn btn-lg btn-info"> Post Now</button>
