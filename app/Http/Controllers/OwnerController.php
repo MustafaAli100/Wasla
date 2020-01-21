@@ -19,7 +19,7 @@ class OwnerController extends Controller
         //
         $user_id=auth()->user()->id;
         $user=User::findOrFail($user_id);
-        $projects=$user->projects; //get all Ower projects 
+        $projects=$user->projects; //get all Owenr projects 
         return view('owner.Ohome',compact('projects'));
 
     }

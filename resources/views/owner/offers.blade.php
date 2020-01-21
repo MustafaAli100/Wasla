@@ -19,11 +19,11 @@
 										<img src="img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
 									</div>
 										<div class="info-user ml-3">
-											<div class="username">Ali Ahmed</div>
+                                        <div class="username">{{$offer->username}}</div>
 												<div class="status">Graphic Designer
-                                                    <span class="text-muted pl-3"> 15 </span>
+                                                    <span class="text-muted pl-3"> {{ $offer->datatime }} </span>
                                                     <span class="text-muted"> day</span>
-                                                    <span class="text-muted pl-3"> 300 </span>
+                                                    <span class="text-muted pl-3"> {{ $offer->oprice }} </span>
                                                     <span class="text-muted ">$ </span>
                                                 </div>
                                             </div>

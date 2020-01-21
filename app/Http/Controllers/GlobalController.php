@@ -16,6 +16,10 @@ class GlobalController extends Controller
     public function showoffer()
     {
 
+        $user_id=auth()->user()->id;
+        $project=$newoffer::findOrFail($project_id);
+        $projects=$user->projects; //get all Owenr projects 
+        return view('owner.Ohome',compact('projects'));
         return view('owner.offers');
 
     }
@@ -40,11 +44,49 @@ class GlobalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $p_id)
     {
         //
+        dd($p_id);  
+        $user_id=auth()->user()->id;
+        $data = request()->validate([ 
+            'offerprice' => ['required',],
+            'offertime' => ['required',],
+        ]);
+        $newoffer = Offer::create([
+            'oprice' => $data['offerprice'],
+            'datatime' => $data['offertime'],
+            'user_id'=> $user_id,
+            'project_id'=>$p_id,
+        ]);
+        if($newoffer)
+        {
+            dd($newoffer);
+            return redirect()->route('owner.offers',compact('singleproject'));
+        }
     }
 
+    public function storeme(Request $request, $p_id)
+    {
+        //
+        dd($request->all);  
+        $user_id=auth()->user()->id;
+        $data = request()->validate([ 
+            'offerprice' => ['required',],
+            'offertime' => ['required',],
+        ]);
+        $newoffer = Offer::create([
+            'oprice' => $data['offerprice'],
+            'datatime' => $data['offertime'],
+            'user_id'=> $user_id,
+            'project_id'=>$p_id,
+        ]);
+        if($newoffer)
+        {
+            dd($newoffer);
+            return redirect()->route('owner.offers',compact('singleproject'));
+        }
+    }
     /**
      * Display the specified resource.
      *

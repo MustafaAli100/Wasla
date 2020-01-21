@@ -99,6 +99,7 @@ Route::get('/homePro','ProgrammerController@index');
 
 //start of Global routes
 Route::get('/showOffer','GlobalController@showoffer');
+Route::get('/offer/{p_id}','GlobalController@storeme');
 //End of global routes
 
 
