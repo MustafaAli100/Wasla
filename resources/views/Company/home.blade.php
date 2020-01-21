@@ -12,7 +12,6 @@
 								<h5 class="text-white op-7 mb-2">look into the added projects and choose what suits you best to do it</h5>
 							</div>
 							<div class="ml-md-auto py-2 py-md-0">
-								<a href="#" class="btn btn-secondary btn-round">My Project</a>
 							</div>
 						</div>
 					</div>

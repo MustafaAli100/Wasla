@@ -12,13 +12,13 @@
                    
                     <li class="nav-item">
                         <a href="{{ url('/home_company') }}">
-                            <i class="fas fa-layer-group"></i>
+                            <i class="icon icon-home"></i>
                             <p>Home Company</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ url('/homePro') }}">
-                            <i class="fas fa-users"></i>
+                            <i class="icon icon-home"></i>
                             <p>Home Programmer</p>
                         </a>
                     </li>

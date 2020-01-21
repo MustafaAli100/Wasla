@@ -232,13 +232,14 @@
 		</div>
 
 		<!-- Sidebar -->
-		@if (auth()->user()->hasRole('Adminstrator'))
+		@include('sidebar.ownersidebar')
+		{{-- @if (auth()->user()->hasRole('Adminstrator'))
 			@include('sidebar.adminsidebar')
 		@elseif(auth()->user()->hasRole('ProjectOwner'))
 			@include('sidebar.ownersidebar')
 		@else
 			@include('sidebar.programmersidebar')
-		@endif
+		@endif --}}
 		{{-- start admin sidebar --}}
 		
 

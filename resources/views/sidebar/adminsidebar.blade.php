@@ -4,30 +4,83 @@
             <ul class="nav nav-primary">
                 <li class="nav-item">
                     <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
-                        <h3 class="fa fa-home" > Home </h3>
+                        <h3 class="icon icon-home" > Home </h3>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{url('/dashbord')}}">
-                        <i class="fas fa-layer-group"></i>
+                        <i class="icon icon-chart"></i>
                         <p>dashboard</p>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{url('/all_users')}}">
-                        <i class="fas fa-users"></i>
+                        <i class="icon icon-people"></i>
                         <p>Users</p>
                     </a>
+                </li> --}}
+
+                <li class="nav-item submenu">
+                    <a data-toggle="collapse" href="#users" class="" aria-expanded="true">
+                        <i class="icon icon-people"></i>
+                        <p>Users</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse show" id="users" style="">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="{{url('/owner')}}">
+                                    <span class="sub-item">Owner projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{url('/programmer')}}">
+                                    <span class="sub-item">programmers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{url('/company')}}">
+                                    <span class="sub-item">P Company</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{url('/all_projects')}}">
-                        <i class="fas fa-pen-square"></i>
+                        <i class="icon icon-pencil"></i>
                         <p>Projects</p>
                     </a>
-                </li>
+               </li> --}}
+               <li class="nav-item submenu">
+                <a data-toggle="collapse" href="#base" class="" aria-expanded="true">
+                    <i class="icon icon-pencil"></i>
+                    <p>Projects</p>
+                    <span class="caret"></span>
+                </a>
+                <div class="collapse show" id="base" style="">
+                    <ul class="nav nav-collapse">
+                        <li>
+                            <a href="{{url('/all_projects')}}">
+                                <span class="sub-item">Approved Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{url('/during')}}">
+                                <span class="sub-item">Projects During Implememtation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{url('/implemented')}}">
+                                <span class="sub-item">Implemented Projects</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
                 <li class="nav-item">
                     <a href="{{url('/acceptance')}}">
-                        <i class="fas fa-th-list"></i>
+                        <i class="icon icon-list"></i>
                         <p>acceptance</p>
                     </a>
                 </li>

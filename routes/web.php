@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/payments', function () {
     return view('home.payment');
 });
+Route::get('/makeoffer', function () {
+    return view('programmer.makeoffer');
+});
 // Route::get('/homepage', function () {
 //     return view('home.home');
 // });
@@ -28,6 +31,21 @@ Route::get('/fadwa', function () {
 });
 Route::get('/pro', function () {
     return view('layouts.app3');
+});
+Route::get('/owner', function () {
+    return view('admin.owner');
+});
+Route::get('/implemented ', function () {
+    return view('admin.implemented');
+});
+Route::get('/during', function () {
+    return view('admin.duringimplememtation');
+});
+Route::get('/programmer', function () {
+    return view('admin.programmer');
+});
+Route::get('/company', function () {
+    return view('admin.company');
 });
 
 Route::get('/home_company', function () {

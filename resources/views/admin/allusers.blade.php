@@ -1,4 +1,4 @@
-@extends('layouts.app2')
+@extends('layouts.app3')
 @section('content')
 		<div class="main-panel">
 			<div class="content">
@@ -17,23 +17,24 @@
 				</div>
 			</div>
 
-					<div class="row" style="background:#e1e1e1">
+				<div class="row" style="background:#e1e1e1">
 							
-						<div class="col-md-4">
-							<div class="card">
-								<div class="card-body">
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-body">
                                 <div class="card-header">
 									<div class="card-title">Owner projects</div>
-								</div><div class="card-list">
-										<div class="item-list">
-											<div class="avatar">
-												<img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
-											</div>
-											<div class="info-user ml-3">
+								</div>
+									<div class="card-list">
+											<div class="item-list">
+												<div class="avatar">
+													<img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+												</div>
+												<div class="info-user ml-3">
 												<div class="username">Ali Moh</div>
-											</div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-										</div>
+												</div>
+                                           		 <button type="submit" class="btn btn-danger">Delete</button>
+										 	</div>
 										<div class="item-list">
 											<div class="avatar">
 												<img src="assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle">
@@ -72,15 +73,16 @@
 										</div>
 										
 									</div>
-								</div>
 							</div>
 						</div>
-                        <div class="col-md-4">
-							<div class="card">
-								<div class="card-body">
+					</div>
+                    <div class="col-md-4">
+						<div class="card">
+							<div class="card-body">
                                 <div class="card-header">
 									<div class="card-title">programmers</div>
-								</div><div class="card-list">
+								</div>
+								<div class="card-list">
 										<div class="item-list">
 											<div class="avatar">
 												<img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
@@ -144,7 +146,7 @@
 								</div>
 							</div>
                         </div>
-                        
+					
             
                         <div class="col-md-4">
                                         <div class="card">
@@ -189,5 +191,7 @@
                                     </div>
                                     
                     </div>
-                </div>		
+				</div>
+		</div>
+			
 @endsection

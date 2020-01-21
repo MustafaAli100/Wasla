@@ -11,7 +11,7 @@
 
                     <li class="nav-item">
                         <a href="{{ url('/home_owner') }}">
-                            <i class="fas fa-layer-group"></i>
+                            <i class="icon icon-home"></i>
                             <p>Home Owner</p>
                         </a>
                     </li>
@@ -19,7 +19,7 @@
                    
                     <li class="nav-item">
                         <a href="{{ url('/add_project') }}">
-                            <i class="fas fa-pen-square"></i>
+                            <i class="icon icon-plus"></i>
                             <p>Add Project </p>
                         </a>
                     </li>
