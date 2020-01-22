@@ -109,6 +109,7 @@ Route::post("/newproject","OwnerController@store");
 Route::get('/add_project','OwnerController@create');
 Route::get('/home_owner','OwnerController@index')->name('Ownerhome');
 Route::get('/showProject/{id}','OwnerController@showProject');
+Route::get('/showOffer/{id}','OwnerController@showoffer');
 // End of owner projrct routes
 
 // Start of programmer routes

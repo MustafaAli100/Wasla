@@ -24,9 +24,12 @@
 								<div class="card-body">
 									<div class="d-flex">
 										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1"><a href="/showProject">hi</a> </h6>
-											<a href="#">
-												<span class="badge badge-count p-0"> 4 </span>
+											<a class="show" href="/showProject/{{$project->id}}" >
+												<h6 class="text-uppercase fw-bold mb-1">{{ $project->Pname }} </h6>
+											</a>
+											<span class="badge badge-count p-0"> 4 </span>
+
+											<a class="show" href="/showOffer/" >
 												<span class="text-muted">offers</span>
 											</a>
 											<span class="text-muted pl-3"> {{ $project->time }} </span>
