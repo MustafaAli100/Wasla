@@ -24,24 +24,27 @@
                                                 <div class="section-content">
                                                     <div class="container">
                             
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <div class="card-group">
-                                                                    <div class="card">
-                                                                        <div class="card-block">
-                                                                            <p>
-                                                                                <input type="number" class="form-control =" placeholder="monye" />
-                                                                            </p>
-                                                                            <p>
-                                                                                <input type="number " class="form-control " placeholder="days " />
-                            
-                                                                            </p>
-                                                                            <button type="button " class="btn btn-outline-success " data-toggle="model " data-target="#myModel ">OK</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <form action="/offer/{{ $p_id }}" method="POST">
+															@csrf
+															<div class="row">
+																<div class="col-sm-12">
+																	<div class="card-group">
+																		<div class="card">
+																			<div class="card-block">
+																				<p>
+																					<input type="number" class="form-control" placeholder="monye" name="offerprice" />
+																				</p>
+																				<p>
+																					<input type="number " class="form-control " placeholder="days " name="offertime"/>
+								
+																				</p>
+																				<input type="submit" class="b bg-dark"/>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</form>
                                                     </div>
                                                 </div>
                             

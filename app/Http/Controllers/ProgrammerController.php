@@ -46,9 +46,13 @@ class ProgrammerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function showoffer($id)
     {
         //
+    
+        $project=Project::findOrfail($id);
+        $offers=$project->offers;
+        return view('owner.offers',compact('offers'));
     }
 
     /**

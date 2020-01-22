@@ -16,6 +16,7 @@ class GlobalController extends Controller
     public function showoffer()
     {
 
+
         return view('owner.offers');
 
     }
@@ -40,7 +41,7 @@ class GlobalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $p_id)
+    public function store(Request $request)
     {
         //
         dd($p_id);  
@@ -64,8 +65,8 @@ class GlobalController extends Controller
 
     public function storeme(Request $request, $p_id)
     {
-        //
-        dd($request->all);  
+        // 
+        
         $user_id=auth()->user()->id;
         $data = request()->validate([ 
             'offerprice' => ['required',],
@@ -79,8 +80,8 @@ class GlobalController extends Controller
         ]);
         if($newoffer)
         {
-            dd($newoffer);
-            return redirect()->route('owner.offers',compact('singleproject'));
+            
+            return redirect()->back();
         }
     }
     /**
