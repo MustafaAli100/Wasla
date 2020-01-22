@@ -78,7 +78,7 @@
       <a class="nav-link" href="#"></a>
     </li>
   </ul> -->
-  <ul class="navbar-nav " style="margin-left:85%">
+  <ul class="navbar-nav " style="margin-left:75%">
     <li class="nav-item">
       <a class="nav-link"  href="{{url('/register')}}">Sing in</a>
     </li>

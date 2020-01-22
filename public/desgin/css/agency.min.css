@@ -107,7 +107,7 @@ img::-moz-selection {
 
 .btn-primary:active,
 .btn-primary:focus {
-    box-shadow: 0 0 0 .2rem rgba(254, 209, 55, .5)!important
+    box-shadow: 0 0 0 .2rem rgba(101, 160, 248, 0.5)!important
 }
 
 #mainNav {
@@ -253,7 +253,7 @@ header.masthead .intro-text .intro-heading {
     height: 100%;
     transition: all ease .5s;
     opacity: 0;
-    background: rgba(254, 209, 54, .9)
+    background: rgba(82, 162, 236, 0.9)
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -446,7 +446,7 @@ header.masthead .intro-text .intro-heading {
     color: #fff;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: #fed136
+    background-color: #d9e9e9
 }
 
 .timeline>li .timeline-image h4 {
@@ -617,7 +617,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #d9e9e9;
     box-shadow: none
 }
 
@@ -685,5 +685,5 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136
+    background-color: #36a0fe
 }
