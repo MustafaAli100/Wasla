@@ -64,7 +64,7 @@
 						<div class="d-flex">
 							<div class="flex-1 ml-3 pt-1">
 								<h4 class="text-uppercase fw-bold mb-1"> Project details  </h4>
-                                <p class=""> {{$singleproject->description }}								</p>
+                                <p class=""> 							</p>
 							</div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
 							<div class="d-flex">
 								<div class="flex-1 ml-3 pt-1">
 									<h4 class="text-uppercase fw-bold mb-1"> Skills  </h4>
-									<span class="skill" style="margin-left:20px; color:blue">   {{ $singleproject->skills }}    </span>
+									<span class="skill" style="margin-left:20px; color:blue">       </span>
 								</div>
                    			 </div>
                 		</div> 
@@ -87,11 +87,11 @@
 									<div><h4 class="text-uppercase fw-bold mb-1"> Project card </h4> </div>
                                     <div class="col-sm-12 skills" >
 										<span class="skills col-sm-6"> budget  : </span>
-										<i class="col-sm-4"> {{ $singleproject->price }}</i >
+										<i class="col-sm-4"> </i >
 									</div><br>
 									<div class="col-sm-12 skills" >
 										<span class="skills col-sm-6">implementation: </span>
-										<i class="col-sm-4" > {{ $singleproject->time }} </i>
+										<i class="col-sm-4" >  </i>
 									</div><br>
 									<div class="col-sm-12 skills" >
 										<span class="skills col-sm-6"> Average offers :  </span>

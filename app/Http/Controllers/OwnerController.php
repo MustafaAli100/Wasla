@@ -78,11 +78,11 @@ class OwnerController extends Controller
     //     $singleproject = Project::findOrfail($id);
     //     return view('owner.show_project',compact('singleproject'));
     // }
-    public function showProject()
+    public function showProject($id)
     {
         //
-        // $singleproject = Project::findOrfail($id);
-        return view('owner.show_project');
+        $singleproject = Project::findOrfail($id);
+        return view('owner.show_project',compact('singleproject'));
     }
 
     /**

@@ -16,10 +16,6 @@ class GlobalController extends Controller
     public function showoffer()
     {
 
-        $user_id=auth()->user()->id;
-        $project=$newoffer::findOrFail($project_id);
-        $projects=$user->projects; //get all Owenr projects 
-        return view('owner.Ohome',compact('projects'));
         return view('owner.offers');
 
     }

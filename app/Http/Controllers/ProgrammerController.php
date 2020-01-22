@@ -24,9 +24,9 @@ class ProgrammerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createOff($p_id)
     {
-        //
+        return view('programmer.makeoffer',compact('p_id'));
     }
 
     /**
