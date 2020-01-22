@@ -116,10 +116,14 @@ Route::get('/showProject/{id}','OwnerController@showProject');
 
 // Start of programmer routes
 Route::get('/homePro','ProgrammerController@index');
+Route::get('/createOffer/{p_id}','ProgrammerController@createOff');
+Route::get('/showOffer/{id}','ProgrammerController@showoffer');
 //End of programmer routes 
 
 //start of Global routes
-Route::get('/showOffer','GlobalController@showoffer');
+
+Route::post('/offer/{p_id}','GlobalController@storeme');
+
 //End of global routes
 
 

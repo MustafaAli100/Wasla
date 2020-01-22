@@ -16,6 +16,7 @@ class GlobalController extends Controller
     public function showoffer()
     {
 
+
         return view('owner.offers');
 
     }
@@ -43,8 +44,46 @@ class GlobalController extends Controller
     public function store(Request $request)
     {
         //
+        dd($p_id);  
+        $user_id=auth()->user()->id;
+        $data = request()->validate([ 
+            'offerprice' => ['required',],
+            'offertime' => ['required',],
+        ]);
+        $newoffer = Offer::create([
+            'oprice' => $data['offerprice'],
+            'datatime' => $data['offertime'],
+            'user_id'=> $user_id,
+            'project_id'=>$p_id,
+        ]);
+        if($newoffer)
+        {
+            dd($newoffer);
+            return redirect()->route('owner.offers',compact('singleproject'));
+        }
     }
 
+    public function storeme(Request $request, $p_id)
+    {
+        // 
+        
+        $user_id=auth()->user()->id;
+        $data = request()->validate([ 
+            'offerprice' => ['required',],
+            'offertime' => ['required',],
+        ]);
+        $newoffer = Offer::create([
+            'oprice' => $data['offerprice'],
+            'datatime' => $data['offertime'],
+            'user_id'=> $user_id,
+            'project_id'=>$p_id,
+        ]);
+        if($newoffer)
+        {
+            
+            return redirect()->back();
+        }
+    }
     /**
      * Display the specified resource.
      *

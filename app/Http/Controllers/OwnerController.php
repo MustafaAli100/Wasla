@@ -19,7 +19,7 @@ class OwnerController extends Controller
         //
         $user_id=auth()->user()->id;
         $user=User::findOrFail($user_id);
-        $projects=$user->projects; //get all Ower projects 
+        $projects=$user->projects; //get all Owenr projects 
         return view('owner.Ohome',compact('projects'));
 
     }
@@ -78,11 +78,11 @@ class OwnerController extends Controller
     //     $singleproject = Project::findOrfail($id);
     //     return view('owner.show_project',compact('singleproject'));
     // }
-    public function showProject()
+    public function showProject($id)
     {
         //
-        // $singleproject = Project::findOrfail($id);
-        return view('owner.show_project');
+        $singleproject = Project::findOrfail($id);
+        return view('owner.show_project',compact('singleproject'));
     }
 
     /**
