@@ -1,4 +1,4 @@
-@extends('layouts.app3')
+@extends('layouts.app')
 @section('content')
 <div class="main-panel">
         <div class="content">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+                            <a href="/editpro" class="profile-edit-btn">Edit Profile</a>
                         </div>
                     </div>
                     <div class="row">

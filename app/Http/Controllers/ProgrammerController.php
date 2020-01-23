@@ -49,9 +49,9 @@ class ProgrammerController extends Controller
     public function showoffer($id)
     {
         //
-    
         $project=Project::findOrfail($id);
         $offers=$project->offers;
+        
         return view('owner.offers',compact('offers'));
     }
 

@@ -207,7 +207,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="desgin/img/team/1.jpg" alt="">
-                        <h2><a href="http://7reef.com/author/alfadni/">fadwa Azhari</a></h2>
+                        <h2><a href="#">fadwa Azhari</a></h2>
                         <p class="secondary-color">Designer</p>
                         <div class="free-rating rate-it" data-score=""></div>
                          <div class="free-experience">
@@ -221,7 +221,7 @@
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="desgin/img/team/2.jpg" alt="">
-                        <h2><a href="http://7reef.com/author/alfadni/">Mustafa Ali</a></h2>
+                        <h2><a href="#">Mustafa Ali</a></h2>
                         <p class="secondary-color">Developer</p>
                         <div class="free-rating rate-it" data-score=""></div>
                          <div class="free-experience">
@@ -236,7 +236,7 @@
                     <div class="team-member">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="desgin/img/team/3.jpg" alt="">
-                        <h2><a href="http://7reef.com/author/alfadni/">Malaz Abdala</a></h2>
+                        <h2><a href="#">Malaz Abdala</a></h2>
                         <p class="secondary-color">Designer</p>
                         <div class="free-rating rate-it" data-score=""></div>
                          <div class="free-experience">
@@ -253,13 +253,13 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="desgin/img/team/1.jpg" alt="">
-                            <h2><a href="http://7reef.com/author/alfadni/">fadwa Azhari</a></h2>
-                            <p class="secondary-color">Designer</p>
+                            <img class="mx-auto rounded-circle" src="desgin/img/team/6.png" alt="">
+                            <h2><a href="#">taghred hussien</a></h2>
+                            <p class="secondary-color">Developer(android)</p>
                             <div class="free-rating rate-it" data-score=""></div>
                              <div class="free-experience">
-                                <span> 12 years experience</span>
-                                <span>0 projects implemented </span>
+                                <span> 2 years experience</span>
+                                <span> 3 projects implemented </span>
                             </div>
                             <div class="free-skill">
                                 </div>
@@ -267,13 +267,13 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="desgin/img/team/2.jpg" alt="">
-                            <h2><a href="http://7reef.com/author/alfadni/">Mustafa Ali</a></h2>
+                            <img class="mx-auto rounded-circle" src="desgin/img/team/5.jpg" alt="">
+                            <h2><a href="#">majed yassin</a></h2>
                             <p class="secondary-color">Developer</p>
                             <div class="free-rating rate-it" data-score=""></div>
                              <div class="free-experience">
-                                <span> 12 years experience</span>
-                                <span>0 projects implemented </span>
+                                <span>3years experience</span>
+                                <span>5projects implemented </span>
                             </div>
                             <div class="free-skill">
                                </div>
@@ -282,13 +282,13 @@
                     <div class="col-sm-4">
                         <div class="team-member">
                             <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="desgin/img/team/3.jpg" alt="">
-                            <h2><a href="http://7reef.com/author/alfadni/">Malaz Abdala</a></h2>
+                                <img class="mx-auto rounded-circle" src="desgin/img/team/4.jpg" alt="">
+                            <h2><a href="#"">mawuia</a></h2>
                             <p class="secondary-color">Designer</p>
                             <div class="free-rating rate-it" data-score=""></div>
                              <div class="free-experience">
-                                <span> 12 years experience</span>
-                                <span>0 projects implemented </span>
+                                <span> 1 years experience</span>
+                                <span> 5 projects implemented </span>
                             </div>
                             <div class="free-skill">
                                </div>
@@ -299,41 +299,8 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div> --}}
         </div>
     </section>
-
-    <!-- Clients -->
-    {{-- <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="desgin/img/logos/envato.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="desgin/img/logos/designmodo.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="desgin/img/logos/themeforest.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <!-- Contact -->
     <section class="page-section" id="contact">

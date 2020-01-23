@@ -3,21 +3,29 @@
 
 <head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<script src="js/jquery2.2.4.js"></script>
-		<script src="js/jquery2.2.4.js"></script>
- 		
-		   <script src="js/bootstrap.js"></script>
-		   <script src="js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        {{-- <link rel="stylesheet" href="css/bootstrap.min.css" /> --}}
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
+        <link rel="stylesheet" href="css/atlantis.min.css"/>
+        <link rel="stylesheet" href="css/pro.css"/>
+        <link rel="stylesheet" href="css/demo.css"/>
+        <link rel="stylesheet" href="css/fonts.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="desgin/css/agency.min.css" />
+        <link rel="stylesheet" href="desgin/css/agency.css" />
+        <script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery2.2.4.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        
 		<!-- Fonts and icons -->
-		<script src="js/plugin/webfont/webfont.min.js"></script>
-	
-		<link rel="stylesheet" href="css/fonts.min.css">
-		<link rel="stylesheet" href="css/atlantis.min.css">
-		<link rel="stylesheet" href="css/demo.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		{{-- <link href="desgin/css/agency.min.css" rel="stylesheet"> --}}
+        <script src="js/plugin/webfont/webfont.min.js"></script>
+        
 
 		
 
@@ -51,10 +59,10 @@
 				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 
-						{{-- <li class="nav-item dropdown hidden-caret">
-								<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="fa fa-envelope"></i>
-								</a>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-envelope"></i>
+							</a>
 							<ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
 								<li>
 									<div class="dropdown-title d-flex justify-content-between align-items-center">
@@ -120,8 +128,8 @@
 									<a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
 								</li>
 							</ul>
-						</li> --}}
-						{{-- <li class="nav-item dropdown hidden-caret">
+						</li>
+						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-bell"></i>
 								<span class="notification">4</span>
@@ -133,7 +141,6 @@
 								<li>
 									<div class="notif-scroll scrollbar-outer">
 										<div class="notif-center">
-										
 											<a href="#">
 												<div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i> </div>
 												<div class="notif-content">
@@ -179,7 +186,7 @@
 									<a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i> </a>
 								</li>
 							</ul>
-						</li>						 --}}
+						</li>						
 						{{-- <li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">

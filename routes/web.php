@@ -20,6 +20,9 @@ Route::get('/payments', function () {
 Route::get('/makeoffer', function () {
     return view('programmer.makeoffer');
 });
+Route::get('/editpro', function () {
+    return view('programmer.editprogram');
+});
 // Route::get('/homepage', function () {
 //     return view('home.home');
 // });
@@ -84,6 +87,10 @@ Route::get('/all_users', function () {
 
 Route::get('/login_user', function () {
     return view('login');
+});
+
+Route::get('/mak', function () {
+    return view('programmer.mak');
 });
 //Route::get("/anything","postcontroller@create");
 
