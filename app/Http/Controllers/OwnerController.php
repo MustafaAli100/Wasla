@@ -86,6 +86,12 @@ class OwnerController extends Controller
         return view('owner.show_project',compact('singleproject'));
     }
 
+    public function showoffer($id)
+    {
+        $project=Project::findOrfail($id);
+        $offers=$project->offers;
+        return view('owner.offers',compact('offers'));
+    }
     /**
      * Show the form for editing the specified resource.
      *
