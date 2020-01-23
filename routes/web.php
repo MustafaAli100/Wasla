@@ -88,6 +88,10 @@ Route::get('/all_users', function () {
 Route::get('/login_user', function () {
     return view('login');
 });
+
+Route::get('/mak', function () {
+    return view('programmer.mak');
+});
 //Route::get("/anything","postcontroller@create");
 
 //Route::get("/form","postcontroller@store"); 

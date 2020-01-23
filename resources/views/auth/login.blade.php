@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center" style="margin-top:10%">
-        <div class="col-md-8" style= "margin-top:25px;">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header text-center">{{ __('Login') }}</div>
 
@@ -56,7 +56,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
-                                <br>
+
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}" style="background-color:
                                     #f4f3f300;color:#007bff;">

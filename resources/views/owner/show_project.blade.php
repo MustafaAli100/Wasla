@@ -1,4 +1,5 @@
-@extends('layouts.app3')
+
+@extends('layouts.app4')
 @section('content')
 	<div class="main-panel">
 		<div class="content">

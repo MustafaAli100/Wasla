@@ -23,7 +23,7 @@
                             <p>Add Project </p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="{{ url('/show_offer') }}">
                             <i class="fa fa-copy"></i>
                             <p>Programmer Offers</p>
@@ -34,7 +34,7 @@
                             <i class="fa fa-copy"></i>
                             <p>Show Project</p>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
