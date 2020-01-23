@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
-use App\User;
-class DashController extends Controller
+
+class AdminProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,20 +14,33 @@ class DashController extends Controller
      */
     public function index()
     {
-        $activeprojects = Project::where('is_approved', 1)->get();
-        $projects = Project::where('is_approved', 0)->get();
-        $users = User::get();
-        
-        return view('admin.dashbord' , compact('activeprojects','projects', 'users'));
-        
+        $projects = Project::latest()->with('user')->paginate(5);
+        return view('admin.allprojects' ,compact('projects'));
     }
 
-    public function getAllProjects()
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function is_approved($id)
     {
-        // get all projects in the system
-        $projects = Project::all();
-        return view('admin.acceptance',compact('projects'));
+
+        $project = Project::findOrFail($id);
+
+        if ($project->is_approved == 0) {
+            $project->is_approved = 1;
+            $project->save();
+        } else {
+            $project->is_approved = 0;
+            $project->save();
+        }
+        return back()->with('success', 'Save changes successfully.');
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -57,7 +70,8 @@ class DashController extends Controller
      */
     public function show($id)
     {
-        //
+        $project = Project::where('id', $id)->with(['user'])->firstOrFail();
+        return view('admin.project_show' , compact('project'));
     }
 
     /**
@@ -91,6 +105,9 @@ class DashController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $project = Project::findOrFail($id);
+        // Storage::delete($user->img);
+        $project->delete();
+        return back()->with('success', 'project has been  deleted');
     }
 }
