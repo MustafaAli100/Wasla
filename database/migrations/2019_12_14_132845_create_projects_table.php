@@ -17,6 +17,7 @@ class CreateProjectsTable extends Migration
             $table->bigIncrements('id');
             $table->string('time');
             $table->boolean('is_approved')->default(0);
+            $table->boolean('is_accepted')->default(0);
             $table->string('Pname');
             $table->string('price');
             $table->string('skills');

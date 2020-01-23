@@ -18,7 +18,9 @@
 				<div class="col-12">
 					<!-- <h1 class="m-3 p-3 d-flex justify-content-center bg-primary">Added project</h1> -->
 					@if (count($projects)>0)
+						
 						@foreach ($projects as $project)
+						@if (!$project->is_approved)
 						<a class="show" href="#" >
 							<div class="card shadow mt-3 mb-3 p-3">
 								<div class="card-body">
@@ -43,7 +45,9 @@
 									</div>
 								</div>
 							</div>
+							@endif
 					@endforeach
+					  
 					@else
 						<div class="d-flex justify-content-center mt-5">
 							<h3 class="mt-5">

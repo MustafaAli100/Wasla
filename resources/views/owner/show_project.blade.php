@@ -6,7 +6,7 @@
 				<div class="page-inner py-5">
 					<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 						<div>
-							<h2 class="text-white pb-2 fw-bold">Project Name</h2>
+							<h2 class="text-white pb-2 fw-bold">{{ $singleproject->Pname }}</h2>
 							<h5 class="text-white op-7 mb-2"> Department Project <i class="fa fa-clock mr-2"> </i> 1 minute ago  </li></h5>
 						</div>
 						<div class="ml-md-auto py-2 py-md-0">

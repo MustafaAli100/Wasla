@@ -100,6 +100,7 @@ class OwnerController extends Controller
     public function edit($id)
     {
         //
+        
     }
 
     /**
@@ -112,6 +113,11 @@ class OwnerController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $data1= request()->validate([
+            'is_approved'=>['required','boolean'],
+        ]);
+        $data1->default(0);
+        
     }
 
     /**
