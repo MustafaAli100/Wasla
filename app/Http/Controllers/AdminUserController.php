@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Project;
 use App\User;
-class DashController extends Controller
+class AdminUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,20 +13,10 @@ class DashController extends Controller
      */
     public function index()
     {
-        $activeprojects = Project::where('is_approved', 1)->get();
-        $projects = Project::where('is_approved', 0)->get();
-        $users = User::get();
-        
-        return view('admin.dashbord' , compact('activeprojects','projects', 'users'));
-        
+        $users = User::latest()->paginate(10);
+        return view('admin.allusers' ,compact('users'));  
     }
 
-    public function getAllProjects()
-    {
-        // get all projects in the system
-        $projects = Project::all();
-        return view('admin.acceptance',compact('projects'));
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -91,6 +80,9 @@ class DashController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+        // Storage::delete($user->img);
+        $user->delete();
+        return back()->with('success', 'user has been  deleted');
     }
 }

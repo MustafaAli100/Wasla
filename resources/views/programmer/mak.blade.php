@@ -6,8 +6,8 @@
 				<div class="page-inner py-5">
 					<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 						<div>
-							<h2 class="text-white pb-2 fw-bold">Project Name</h2>
-							<h5 class="text-white op-7 mb-2"> Department Project <i class="fa fa-clock mr-2"> </i> 1 minute ago  </li></h5>
+							<h2 class="text-white pb-2 fw-bold">pharmacy</h2>
+							<h5 class="text-white op-7 mb-2"> Department Project <i class="fa fa-clock mr-2"> </i> 15 minute ago  </li></h5>
 						</div>
 						<div class="ml-md-auto py-2 py-md-0">
                             <div class="panel panel-default">
@@ -38,7 +38,7 @@
 																					<input type="number " class="form-control " placeholder="days " name="offertime"/>
 								
 																				</p>
-																				<input type="submit" class="b bg-dark"/>
+																				<input type="submit" class="btn bg-primary-gradient"/>
 																			</div>
 																		</div>
 																	</div>
@@ -67,7 +67,7 @@
 						<div class="d-flex">
 							<div class="flex-1 ml-3 pt-1">
 								<h4 class="text-uppercase fw-bold mb-1"> Project details  </h4>
-                                <p class=""> 							</p>
+                                <i class=""> pharmacy system run the pharmacy business of buying, selling, storing and billing</i>
 							</div>
                         </div>
                     </div>
@@ -78,6 +78,7 @@
 							<div class="d-flex">
 								<div class="flex-1 ml-3 pt-1">
 									<h4 class="text-uppercase fw-bold mb-1"> Skills  </h4>
+									<i> php laravelframework, android</i>
 									<span class="skill" style="margin-left:20px; color:blue">       </span>
 								</div>
                    			 </div>
@@ -87,14 +88,15 @@
 				        <div class="card-body">
 							<div class="d-flex">
 								<div class="flex-1 ml-3 pt-1">
-									<div><h4 class="text-uppercase fw-bold mb-1"> Project card </h4> </div>
+									<div><h4 class="text-uppercase fw-bold mb-1"> Project card </h4>
+									 </div>
                                     <div class="col-sm-12 skills" >
 										<span class="skills col-sm-6"> budget  : </span>
-										<i class="col-sm-4"> </i >
+										<i class="col-sm-4"> 1000-2500 $1</i >
 									</div><br>
 									<div class="col-sm-12 skills" >
 										<span class="skills col-sm-6">implementation: </span>
-										<i class="col-sm-4" >  </i>
+										<i class="col-sm-4" > 30 </i>
 									</div><br>
 									<div class="col-sm-12 skills" >
 										<span class="skills col-sm-6"> Average offers :  </span>

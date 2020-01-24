@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>@yield('tab-title')</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<!-- <link rel="icon" href="" type="image/x-icon"/> -->
+	<!-- Fonts and icons -->
+	<script src="{{ asset ('js/plugin/webfont/webfont.min.js') }}"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<script src="js/jquery2.2.4.js"></script>
 		<script src="js/jquery2.2.4.js"></script>
- 		
-		   <script src="js/bootstrap.js"></script>
-		   <script src="js/bootstrap.min.js"></script>
-		<!-- Fonts and icons -->
-		<script src="js/plugin/webfont/webfont.min.js"></script>
-	
-		<link rel="stylesheet" href="css/fonts.min.css">
-		<link rel="stylesheet" href="css/atlantis.min.css">
-		<link rel="stylesheet" href="css/demo.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		{{-- <link href="desgin/css/agency.min.css" rel="stylesheet"> --}}
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ["{{ asset ('assets/css/fonts.min.css') }}"]},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
 
-		
+	<!-- CSS Files -->
 
-</head>
+	<link  rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+	<link  rel="stylesheet" href="{{ asset('css/atlantis.min.css') }}">
+	<link  rel="stylesheet" href="{{ asset('css/lobibox.css') }}">
+
+
 <body>
-	<div class="wrapper">
+<div class="wrapper">
 		<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
@@ -300,33 +304,43 @@
 	</div>
 		
 			
+
+			
 	<!--   Core JS Files   -->
-	{{-- <script src="js/core/jquery.3.2.1.min.js"></script> --}}
-	<script src="js/core/popper.min.js"></script>
-	{{-- <script src="js/core/bootstrap.min.js"></script> --}}
-
+	<script src="{{ asset('js/lobibox.js') }}"></script>
+	 <script type="text/javascript" src="{{ asset('js/core/jquery.3.2.1.min.js') }}"></script>
+ 	<script type="text/javascript" src="{{ asset('js/core/popper.min.js') }}"></script>
+ 	<script type="text/javascript" src="{{ asset('js/core/bootstrap.min.js') }}"></script>
 	<!-- jQuery UI -->
-	<script src="js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script src="js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 
-	<!-- jQuery Scrollbar -->
-	<script src="js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="{{ asset('js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') }}"></script>
+	
+	<script type="text/javascript" src="{{ asset('js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
 
 
-	<!-- Chart JS -->
-	<script src="js/plugin/chart.js/chart.min.js"></script>
 
-	<!-- jQuery Sparkline -->
-	<script src="js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
-	<!-- jQuery Vector Maps -->
-	<script src="js/plugin/jqvmap/jquery.vmap.min.js"></script>
-	<script src="js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+	<!-- Bootstrap Notify -->
+	<script type="text/javascript" src="{{ asset('js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
 
 	<!-- Sweet Alert -->
-	<script src="js/plugin/sweetalert/sweetalert.min.js"></script>
+	<script type="text/javascript" src="{{ asset('js/plugin/sweetalert/sweetalert.min.js') }}"></script>
 
+
+	<!-- pdf and image JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"rel="stylesheet" type="text/css" />
+		
+	<!-- pdf and image JS -->
+	<script  type="text/javascript" src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
+
+
+	
 	<!-- Atlantis JS -->
-	<script src="js/atlantis.min.js"></script>
+		<script type="text/javascript" src="{{ asset('js/costome/atlantis.min.js') }}"></script>
+	    <script type="text/javascript" src="{{ asset('js/costome/all.min.js') }}"></script>
+
 
 
 

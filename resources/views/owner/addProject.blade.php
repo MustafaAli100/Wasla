@@ -25,27 +25,27 @@
             @csrf
                 <div class="bade-black">
                         <label for="project__title" class="control-label">Project Title </label>
-                    <input id="project__title" class=" form-control" placeholder="Listed Title For a brief Describes Your Project Accurately" name="title" type="text">
+                    <input id="project__title" class=" form-control" required placeholder="Listed Title For a brief Describes Your Project Accurately" name="title" type="text">
                 </div>
                 
         <!--المهارااااااااات المطلوبة-->
                 <div class="form-group  ">
                         <label for="project__title" class="control-label">Skills Required </label>
                     <div class="tagsinput-container">
-                        <input type="text" class=" form-control" id="project__skills" name="skills" value="" data-filter="skills" data-ui="skillsInput" placeholder="Select The Most Important Skills required The Implementation Of Your Project">
+                        <input type="text" class=" form-control"  required id="project__skills" name="skills" value="" data-filter="skills" data-ui="skillsInput" placeholder="Select The Most Important Skills required The Implementation Of Your Project">
                     </div>
                 </div>
         <!--تفاصيل المشرووووع-->
                 <div class="form-group ">
                         <label for="project__details" class="control-label">Project Details </label>
-                        <textarea class=" form-control" row="6" id="project__details" name="description" cols="50" rows="10" placeholder=" Include a Detailed And Accurate DSescription Of Your Project">                </textarea>
+                        <textarea class=" form-control" row="6" id="project__details" name="description"  cols="50" rows="10"  required placeholder=" Include a Detailed And Accurate DSescription Of Your Project" >                </textarea>
                 </div>
                     <!--تلميزانية المتوقعة-->
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group project__budget-select " data-selectize-keyboard="disable">
                                 <label for="project__budget" class="control-label">Projected Budget</label>
-                                <select name="budget" id="project__budget" class="form-control" data-ui="placeholder-select">
+                                <select name="budget" id="project__budget"   required class="form-control" data-ui="placeholder-select">
                                     <option value="" selected="" disabled="" hidden=""></option>
                                     <option value="25-50">25 - 50 $1</option>
                                     <option value="50-100">50 - 100 $1</option>
@@ -63,7 +63,7 @@
                             <div class="form-group">
                                     <label for="project__duration" class="control-label">اExpected delivery time</label>
                                 <div class="input-group">
-                                    <input type="number" name="duration" id="project__duration" min="1" value="" class="customIpg form-control ">
+                                    <input type="number" name="duration" id="project__duration"  required min="1" value="" class="customIpg form-control ">
                                     <span class="input-group-text">Days</span>
                                 </div>
                                 <p class="help-block text-zeta pull-right customF">When you Need To Receive Your Project </p>

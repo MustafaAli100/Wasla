@@ -1,4 +1,4 @@
-@extends('layouts.app3')
+@extends('layouts.admin')
 
 @section('content')
     <div class="main-panel">
@@ -18,113 +18,67 @@
 				</div>
 			</div>
                     
-					<div class="row" style="background:#e1e1e1">
-							
-						<div class="col-md-4">
-							<div class="card">
-								<div class="card-body">
-                                <div class="card-header">
-									<div class="card-title">Acceptable Projects</div>
-								</div><div class="card-list">
-										<div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        
-										
-										
-									</div>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-4">
-							<div class="card">
-								<div class="card-body">
-                                <div class="card-header">
-									<div class="card-title">Projects Under Way</div>
-								</div>
-								<div class="card-list">		
-									<div class="item-list">
-										<div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-											<div class="username">Ali Ahmed</div>
-										</div>
-										<button type="submit" class="btn btn-danger">Delete</button>
-									</div>
-                                </div>
-                                        
-									</div>
-								</div>
-							</div>
-                      
-                        
-            
-                            <div class="col-md-4">
-							<div class="card">
-								<div class="card-body">
-                                <div class="card-header">
-									<div class="card-title">Implemented Projects</div>
-								</div><div class="card-list">
-										<div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        <div class="item-list">
-									        <div class="flex-1 ml-3 pt-1">
-											<h6 class="text-uppercase fw-bold mb-1">system ph </h6>
-                                            <div class="username">Ali Ahmed</div>
-                                            </div>
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </div>
-                                        
-										
-										
-									</div>
-								</div>
-							</div>
-						</div>
-       					
-					</div>
+			<div class="col-md-12">
+            <div class="card">
 
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="add-row" class="display table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th> Title Project </th>
+									<th> Owner Project</th>
+                                    <th>Status</th>
+                                    <th style="width: 10%"></th>
+									<th style="width: 10%">Action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($projects as $project)
+                                <tr>
+                                    <td>{{ $project->Pname}}</td>
+									<td>{{ $project->user->firstname}}</td> 
+									@if($project->is_approved==0)
+									<td> not approved </td> 
+									@else
+									<td> approved </td> 
+									@endif
+									
+									<td class="text-center">
+									   <!-- start approved_status  -->
+										@if($project->is_approved)
+											<div class="d-inline-block"> <a href="{{ route('admin.project.is_approved', $project->id) }}" class="btn btn-sm btn-success" ><i class="fa fa-check-circle"></i> Not Approve</a></div>
+										@else
+									    	<div class="d-inline-block"> <a href="{{ route('admin.project.is_approved', $project->id) }}" class="btn btn-sm btn-success" ><i class="fa fa-check-circle"></i> Approve</a></div>
+										@endif
+										</td>
+										<td>
+										<div class="d-inline-block"> <a href="{{ route('admin.project.show', $project->id) }}" class="btn btn-sm btn-primary" ><i class="fa fa-eye"></i> Show</a></div>
+									 <!-- end approved_status -->
+									 </td>
+									 <td>
+									<form class="d-inline-block" action="{{ route('admin.project.delete', $project->id) }}" method="post">
+                                	  {{csrf_field()}}
+                                		<input name="_method" type="hidden" value="DELETE">
+                               			<button type="submit" class="btn btn-danger" onclick="return confirm('Are your sure you wont to delete this project ?')"><i class="fa fa-close"> Delete</i></button>
+                           			 </form>
+									</td> 
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="demo">
+                    <ul class="pagination pg-primary text-center">
+                        {{$projects->render()}}
+                    </ul>
+                </div>
+            </div>
+        </div>	
 @endsection

@@ -44,6 +44,7 @@ class OwnerController extends Controller
     {
         //
         $user_id=auth()->user()->id;
+        echo $user_id;
         $data = request()->validate([ 
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
