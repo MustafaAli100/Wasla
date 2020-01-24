@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use App\Offer;
 
 class AdminProjectController extends Controller
 {
@@ -46,9 +47,9 @@ class AdminProjectController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
-        //
+       return view('owner.add_offer', compact('id'));  
     }
 
     /**
@@ -57,9 +58,26 @@ class AdminProjectController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request , $id)
     {
-        //
+             
+             $user_id=auth()->user()->id;
+            
+             $data = request()->validate([ 
+                 'oprice' => ['required', 'string', 'max:255'],
+                 'datatime' => ['required', 'string'],
+                
+             ]);
+             $newproject = Offer::create([
+                 'oprice' => $data['oprice'],
+                 'datatime' => $data['datatime'],
+                 'user_id'=> $user_id,
+                 'project_id'=> $id,
+     
+             ]);
+
+              return back()->with('success', 'offer has been  added');
+
     }
 
     /**
@@ -82,7 +100,8 @@ class AdminProjectController extends Controller
      */
     public function edit($id)
     {
-        //
+        $projects = Project::latest()->with('user')->findOrFail($id);
+        return view('owner.add_offer' ,compact('projects' ,'id')); 
     }
 
     /**

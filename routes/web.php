@@ -148,6 +148,8 @@ Route::group(['prefix' => 'project'], function (){
 
      Route::get('/project','AdminProjectController@index')->name('admin.project.index');
      Route::get('show/{id}','AdminProjectController@show')->name('admin.project.show');
+     Route::get('/create/{id}','AdminProjectController@create')->name('project.offer');
+     Route::post('/add/{id}','AdminProjectController@store')->name('project.add');
      Route::get('/is_approved/{id}','AdminProjectController@is_approved')->name('admin.project.is_approved');
      Route::delete('/delete/{id}', 'AdminProjectController@destroy')->name('admin.project.delete');
     
