@@ -135,7 +135,7 @@ Route::post('/offer/{p_id}','GlobalController@storeme');
 Route::group(['prefix' => 'admin'], function (){
 
     Route::get('/user','AdminUserController@index')->name('admin.user.index');
-     Route::post('/delete/{id}', 'AdminUserController@destroy')->name('admin.user.delete');
+    Route::delete('/delete/{id}', 'AdminUserController@destroy')->name('admin.user.delete');
     
 });
 
@@ -144,7 +144,7 @@ Route::group(['prefix' => 'project'], function (){
      Route::get('/project','AdminProjectController@index')->name('admin.project.index');
      Route::get('show/{id}','AdminProjectController@show')->name('admin.project.show');
      Route::get('/is_approved/{id}','AdminProjectController@is_approved')->name('admin.project.is_approved');
-     Route::post('/delete/{id}', 'AdminProjectController@destroy')->name('admin.project.delete');
+     Route::delete('/delete/{id}', 'AdminProjectController@destroy')->name('admin.project.delete');
     
 });
 

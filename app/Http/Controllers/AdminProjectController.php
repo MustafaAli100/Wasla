@@ -106,7 +106,6 @@ class AdminProjectController extends Controller
     public function destroy($id)
     {
         $project = Project::findOrFail($id);
-        // Storage::delete($user->img);
         $project->delete();
         return back()->with('success', 'project has been  deleted');
     }
