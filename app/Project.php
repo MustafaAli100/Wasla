@@ -17,9 +17,9 @@ class Project extends Model
     ];
 
     public function user()
-    {
-        return $this->blengsTo(User::class);
-    }
+	{
+	return $this->belongsTo('App\User');
+	}
     public function payment()
     {
         return $this->hasOne('project\payemnt');
