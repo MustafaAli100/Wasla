@@ -18,6 +18,7 @@ class CreateOffersTable extends Migration
             $table->bigInteger('project_id');
             $table->index('project_id');
             $table->string('oprice');
+            $table->boolean('is_accept')->default(0);
             $table->string('datatime');
             $table->bigInteger('user_id');
             $table->timestamps();

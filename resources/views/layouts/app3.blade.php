@@ -121,7 +121,7 @@
 								</li>
 							</ul>
 						</li> --}}
-						{{-- <li class="nav-item dropdown hidden-caret">
+						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-bell"></i>
 								<span class="notification">4</span>
@@ -133,7 +133,6 @@
 								<li>
 									<div class="notif-scroll scrollbar-outer">
 										<div class="notif-center">
-										
 											<a href="#">
 												<div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i> </div>
 												<div class="notif-content">
@@ -179,7 +178,7 @@
 									<a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i> </a>
 								</li>
 							</ul>
-						</li>						 --}}
+						</li>						
 						{{-- <li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
@@ -261,7 +260,7 @@
 		<div>
        		 @yield('content')
         </diV>
-
+{{-- 
 		<footer class="footer">
 			<div class="container">
 				<div class="row align-items-center">
@@ -297,7 +296,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer> --}}
 	</div>
 		
 			

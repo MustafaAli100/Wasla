@@ -149,13 +149,14 @@
                                       <p class="disclosure-text">In Registeration On The Site Your Agree To Comply With <a target="_blank" tapable href="#">Privacy Policy & Terms of Use </a>Of Wasla.com
                                       </p>
                                     </label>
-                                    <input type="checkbox" class="btn join-btn-secondary join-btn" data-position-join="right">
-                                </div>   
+                                    <input type="checkbox" id= "ch" class="btn join-btn-secondary join-btn" data-position-join="right">
+                                  
+                                  </div>   
                                 <!-- sign up-->
                                 <div class="form-group">
                                   <label class="col-md-4 control-label"></label>
                                     <div class="col-md-12">
-                                      <button type="submit" class="btn btn-primary" style="color: #fff">Sign up<span class="glyphicon glyphicon-send"></span></button>
+                                      <button type="submit" class="btn btn-primary" onClick="testCheckbox"    style="color: #fff">Sign up<span class="glyphicon glyphicon-send"></span></button>
                                     </div>
                                 </div>
                           </fieldset>

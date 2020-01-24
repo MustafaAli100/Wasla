@@ -88,7 +88,12 @@ Route::get('/all_users', function () {
 Route::get('/login_user', function () {
     return view('login');
 });
-
+Route::get('/off', function () {
+    return view('programmer.off');
+});
+Route::get('/offowner', function () {
+    return view('owner.offowner');
+});
 Route::get('/mak', function () {
     return view('programmer.mak');
 });

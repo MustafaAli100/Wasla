@@ -10,12 +10,12 @@
                     </li>
 
                    
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="{{ url('/home_company') }}">
                             <i class="icon icon-home"></i>
                             <p>Home Company</p>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a href="{{ url('/homePro') }}">
                             <i class="icon icon-home"></i>
@@ -23,7 +23,7 @@
                         </a>
                     </li>
                     
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="{{ url('/show_offer') }}">
                             <i class="fa fa-copy"></i>
                             <p>Programmer Offers</p>
@@ -34,7 +34,7 @@
                             <i class="fa fa-copy"></i>
                             <p>Show Project</p>
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>

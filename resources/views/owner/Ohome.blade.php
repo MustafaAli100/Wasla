@@ -28,7 +28,7 @@
 											</a>
 											<span class="badge badge-count p-0"> 4 </span>
 
-											<a class="show" href="/showOffer/" >
+											<a class="show" href="/mak" >
 												<span class="text-muted">offers</span>
 											</a>
 											<span class="text-muted pl-3"> {{ $project->time }} </span>
