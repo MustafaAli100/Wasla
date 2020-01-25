@@ -13,7 +13,7 @@
                         <div class="col-md-6">
                             <div class="profile-head">
                                 <h5>
-                                    Ali Ahmed
+                                    {{ $user->fristname }} {{ $user->lastname }}
                                 </h5>
                                 <h6>
                                     Web Developer and Designer
@@ -55,7 +55,7 @@
                                             <label>Name</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <p>Ali Ahmed</p>
+                                            <p>{{ $user->fristame }} {{ $user->lastname }}</p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -63,7 +63,7 @@
                                             <label>Email</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <p>Alimohmmed@gmail.com</p>
+                                            <p>{{ $user->email }}</p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -71,7 +71,7 @@
                                             <label>Phone</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <p>123 456 7890</p>
+                                            <p>{{ $user->phone }}</p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -79,17 +79,10 @@
                                             <label>Addreese</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <p>Alkh bahri 7890</p>
+                                            <p>{{ $user->address }}</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Gender</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Male </p>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     <div class="row">

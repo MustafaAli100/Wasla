@@ -57,9 +57,7 @@ Route::get('/home_company', function () {
 Route::get('/myprojects', function () {
     return view('programmer.myProjects');
 });
-Route::get('/show_programmer', function () {
-    return view('programmer.show');
-});
+
 Route::get('/edit_programmer', function () {
     return view('programmer.editprogram');
 });
@@ -128,6 +126,8 @@ Route::get('/showOffer/{id}','OwnerController@showoffer');
 Route::get('/homePro','ProgrammerController@index');
 Route::get('/createOffer/{p_id}','ProgrammerController@createOff');
 Route::get('/showOffer/{id}','ProgrammerController@showoffer');
+Route::get('/show_programmer','GlobalController@showprofile');
+// Route::get('/show_programmer/{id}','GlobalController@show');
 //End of programmer routes 
 
 //start of Global routes
